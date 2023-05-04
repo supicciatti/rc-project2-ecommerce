@@ -1,0 +1,62 @@
+@‌import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital@0;1&display=swap');
+
+body {
+  background-color: #100f10;
+  color: rgba(255, 255, 255, 0.96);
+}
+.mainBox {
+  background-color: #363636;
+  border-radius: 0.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.colorTextoH5 {
+  color: rgba(255, 255, 255, 0.67);
+}
+
+.modalColorFont {
+  color: rgba(255, 255, 255, 0.67);
+}
+.modal-body {
+  background-color: #363636;
+}
+@media (min-width: 576px) {
+  .mainBox {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .mainBox {
+    display: grid;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  form {
+    width: 650px;
+  }
+}
+@media (min-width: 992px) {
+  .mainBox {
+    display: grid;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  form {
+    width: 700px;
+  }
+}
