@@ -1,62 +1,83 @@
-@‌import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital@0;1&display=swap');
-
+* {
+  box-sizing: border-box;
+}
 body {
-  background-color: #100f10;
+  background-color: #363636;
   color: rgba(255, 255, 255, 0.96);
 }
+
 .mainBox {
-  background-color: #363636;
-  border-radius: 0.3rem;
+  background-color: #242424;
+  border-radius: 1.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8739f9;
 }
-.colorTextoH5 {
+.textColorH5 {
   color: rgba(255, 255, 255, 0.67);
 }
-
-.modalColorFont {
-  color: rgba(255, 255, 255, 0.67);
+..passwordRecoveryStyle {
+  color: blue;
 }
-.modal-body {
-  background-color: #363636;
+.passwordRecoveryStyle:hover {
+  cursor: pointer;
+}
+.loginButton {
+  background-color: #8739f9;
+  color: white;
+  font-size: large;
+}
+.loginButton:hover {
+  background-color: #8639f9ad;
+  color: #white;
+}
+.googleIconSize {
+  height: 20px;
+  width: 20px;
+}
+.loginGoogle {
+  background-color: white;
+  color: grey;
+}
+.loginGoogle:hover {
+  background-color: rgba(255, 255, 255, 0.877);
+  color: grey;
+}
+.loginFacebook {
+  background-color: rgb(34, 34, 156);
+  color: white;
+}
+.loginFacebook:hover {
+  background-color: rgba(34, 34, 156, 0.801);
+  color: white;
+}
+.inputColor:focus {
+  border-color: #8739f9;
+  box-shadow: 0.5px 0.5px 6px 1px #8739f9;
+}
+.modalDesign {
+  background-color: #242424;
+  border-radius: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8739f9;
 }
 @media (min-width: 576px) {
   .mainBox {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
   }
 }
 @media (min-width: 768px) {
   .mainBox {
-    display: grid;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-  form {
-    width: 650px;
   }
 }
 @media (min-width: 992px) {
   .mainBox {
-    display: grid;
-    justify-content: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-  form {
-    width: 700px;
+    margin-inline: 15%;
+    margin-bottom: 20%;
+    margin-top: 10%;
   }
 }

@@ -5,18 +5,12 @@ body {
   background-color: #363636;
   color: rgba(255, 255, 255, 0.96);
 }
-.imageBox {
-  width: 100%;
-}
+
 .mainBox {
   background-color: #242424;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
   border-style: solid;
   border-width: 1px;
   border-color: #8739f9;
@@ -49,5 +43,8 @@ body {
 }
 @media (min-width: 992px) {
   .mainBox {
+    margin-inline: 15%;
+    margin-bottom: 20%;
+    margin-top: 10%;
   }
 }
