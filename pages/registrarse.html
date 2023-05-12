@@ -39,7 +39,7 @@
               </h5>
             </div>
             <!-- Formulario -->
-            <form class="p-3">
+            <form class="p-3 needs-validation" novalidate>
               <div class="mb-3">
                 <label for="nombreYApellido" class="form-label colorTextoH5"
                   >Nombre y apellido</label
@@ -53,6 +53,10 @@
                   title="Ingrese al menos dos palabras separadas por un espacio en blanco"
                   required
                 />
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">
+                  Ingresá tu nombre y apellido separados por un espacio.
+                </div>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label colorTextoH5">Email</label>
@@ -62,9 +66,12 @@
                   id="email"
                   placeholder="correo@email.com"
                   pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
-                  title="Ingrese un correo electrónico válido"
                   required
                 />
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">
+                  Ingresá un correo electrónico válido.
+                </div>
               </div>
               <div class="mb-3">
                 <label for="imputNuevaClave" class="form-label colorTextoH5"
@@ -76,9 +83,14 @@
                   id="imputNuevaClave"
                   placeholder="**********"
                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
-                  title="Ingrese una contraseña de: *Al menos 8 caracteres. *Que tenga al menos una letra mayúscula, una letra minúscula y un número"
                   required
                 />
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">
+                  Ingrese una clave que tenga: <br />*Al menos 8 caracteres.
+                  <br />*Al menos una letra mayúscula y una letra minúscula
+                  <br />*Al menos un número
+                </div>
               </div>
               <div class="mb-3">
                 <label for="fechaNacimiento" class="form-label colorTextoH5"
@@ -91,10 +103,15 @@
                 />
               </div>
               <div class="d-flex justify-content-center">
-                <button type="submit" class="btn colorBotonRegistrarse my-2">
+                <button
+                  type="submit"
+                  class="btn colorBotonRegistrarse my-2"
+                  onclick="validarEdad(event)"
+                >
                   Registrarse
                 </button>
               </div>
+              <div id="modalError"></div>
             </form>
           </div>
         </div>
@@ -106,5 +123,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/formValidation.js"></script>
+    <script src="../js/formDateValidation.js"></script>
   </body>
 </html>
