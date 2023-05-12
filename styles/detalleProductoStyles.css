@@ -1,0 +1,49 @@
+body {
+  background-color: #363636;
+  color: rgba(255, 255, 255, 0.96);
+}
+.imgSize {
+  width: 60px;
+}
+.imgBoxStyles {
+  padding: 0.3rem;
+  margin: 0.1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: blueviolet;
+}
+.deliveryIcon {
+  padding: 1px;
+  border-radius: 3px;
+  background-color: rgb(168, 168, 168);
+  width: 25px;
+  height: 25px;
+}
+.designBar {
+  margin: auto;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(137, 43, 226, 0.705);
+}
+
+.buyNowButton {
+  background-color: #8739f9;
+  color: white;
+  font-size: large;
+}
+
+.buyNowButton:hover {
+  background-color: #8639f9ad;
+  color: white;
+}
+
+.addToCartButton {
+  background-color: rgb(141, 141, 141);
+  color: white;
+}
+
+.addToCartButton:hover {
+  background-color: rgba(141, 141, 141, 0.664);
+  color: white;
+}

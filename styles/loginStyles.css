@@ -31,7 +31,7 @@ body {
 }
 .loginButton:hover {
   background-color: #8639f9ad;
-  color: #white;
+  color: white;
 }
 .googleIconSize {
   height: 20px;
