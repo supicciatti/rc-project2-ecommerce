@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #363636;
   color: rgba(255, 255, 255, 0.96);
@@ -46,4 +49,48 @@ body {
 .addToCartButton:hover {
   background-color: rgba(141, 141, 141, 0.664);
   color: white;
+}
+
+.textBoxContainer {
+  background-color: #242424;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8739f9;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  padding-bottom: 1rem;
+}
+.sumTextBox {
+  padding-top: 1rem;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.651);
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.fullTextBox {
+  height: auto;
+}
+
+.inputQuestionBox {
+  height: 100px;
+  vertical-align: text-top;
+}
+
+.inputQuestionBox:focus {
+  border-color: #8739f9;
+  box-shadow: 0.5px 0.5px 6px 1px #8739f9;
+}
+
+.questionBox {
+  background-color: #242424;
+  padding: 10px;
+  border-radius: 0.4rem;
+}
+#userName {
+  border-bottom: 0.5px solid #8739f9;
+  border-right: 0.5px solid #8739f9;
+}
+#userQuestion {
+  border-bottom: 0.5px solid #8739f9;
 }
