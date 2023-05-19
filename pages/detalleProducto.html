@@ -17,7 +17,6 @@
   <body>
     <!-- CAJA QUE CONTIENE TODO EL DOCUMENTO -->
     <div class="container-fluid">
-      <!-- CONTIENE LA PRIMERA SECCIÓN, HASTA PRODUCTOS RELACIONADOS -->
       <section>
         <div class="d-flex flex-column flex-lg-row mb-4">
           <!-- CAROUSEL DE PRODUCTO SELECCIONADO -->
@@ -26,23 +25,6 @@
             class="carousel slide col-lg-6"
             data-ride="carousel"
           >
-            <!-- Indicadores -->
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleControls"
-                data-bs-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleControls"
-                data-bs-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleControls"
-                data-bs-slide-to="2"
-              ></li>
-            </ol>
-
             <!-- Diapositivas -->
             <div class="carousel-inner">
               <div class="carousel-item active my-5">
@@ -93,7 +75,7 @@
             </a>
           </div>
           <!-- CAJA DESCRIPCIÓN PRODUCTO -->
-          <div class="my-3 col-lg-4">
+          <div class="my-3 col-lg-3">
             <h2 class="my-2">
               Samsung Galaxy S23 Plus 8gb 256gb Phantom Black
             </h2>
@@ -121,7 +103,7 @@
             </div>
           </div>
           <!-- CAJA CON BOTONES DE COMPRAS -->
-          <div class="d-flex flex-column mt-lg-5">
+          <div class="d-flex flex-column mt-lg-5 col-lg-3">
             <div>
               <p class="text-center mt-3">
                 Cantidad: 1
@@ -144,30 +126,15 @@
         </div>
       </section>
     </div>
-    <!-- Carousel de prod relacionados -->
     <section>
       <div>
         <h4 class="text-center">Productos que quizás te interesen</h4>
+        <!-- Carousel de prod relacionados -->
         <div
           id="carouselExampleIndicators"
           class="carousel slide container-fluid"
           data-ride="carousel"
         >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-            ></li>
-            <li
-              data-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-            ></li>
-            <li
-              data-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-            ></li>
-          </ol>
           <div class="carousel-inner mx-auto">
             <div class="carousel-item active">
               <div class="row m-3 justify-content-center text-center">
