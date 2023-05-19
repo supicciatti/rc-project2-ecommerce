@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #363636;
+  color: rgba(255, 255, 255, 0.96);
+}
+.imgSize {
+  width: 60px;
+}
+.imgBoxStyles {
+  padding: 0.3rem;
+  margin: 0.1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: blueviolet;
+}
+.deliveryIcon {
+  padding: 1px;
+  border-radius: 3px;
+  background-color: rgb(168, 168, 168);
+  width: 25px;
+  height: 25px;
+}
+.designBar {
+  margin: auto;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(137, 43, 226, 0.705);
+}
+
+.buyNowButton {
+  background-color: #8739f9;
+  color: white;
+  font-size: large;
+}
+
+.buyNowButton:hover {
+  background-color: #8639f9ad;
+  color: white;
+}
+
+.addToCartButton {
+  background-color: rgb(141, 141, 141);
+  color: white;
+}
+
+.addToCartButton:hover {
+  background-color: rgba(141, 141, 141, 0.664);
+  color: white;
+}
+
+.textBoxContainer {
+  background-color: #242424;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8739f9;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  padding-bottom: 1rem;
+}
+.sumTextBox {
+  padding-top: 1rem;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.651);
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.fullTextBox {
+  height: auto;
+}
+
+.inputQuestionBox {
+  height: 100px;
+  vertical-align: text-top;
+}
+
+.inputQuestionBox:focus {
+  border-color: #8739f9;
+  box-shadow: 0.5px 0.5px 6px 1px #8739f9;
+}
+
+.questionBox {
+  background-color: #242424;
+  padding: 10px;
+  border-radius: 0.4rem;
+}
+#userName {
+  border-bottom: 0.5px solid #8739f9;
+  border-right: 0.5px solid #8739f9;
+}
+#userQuestion {
+  border-bottom: 0.5px solid #8739f9;
+}

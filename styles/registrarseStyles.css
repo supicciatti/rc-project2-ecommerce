@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #363636;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.mainBox {
+  background-color: #242424;
+  border-radius: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8739f9;
+}
+.colorTextoH5 {
+  color: rgba(255, 255, 255, 0.67);
+}
+
+.colorBotonRegistrarse {
+  background-color: #8739f9;
+  color: white;
+  font-size: large;
+}
+.colorBotonRegistrarse:hover {
+  background-color: #8639f9ad;
+  color: #white;
+}
+
+.inputColor:focus {
+  border-color: #8739f9;
+  box-shadow: 0.5px 0.5px 6px 1px #8739f9;
+}
+@media (min-width: 576px) {
+  .mainBox {
+  }
+}
+@media (min-width: 768px) {
+  .mainBox {
+  }
+}
+@media (min-width: 992px) {
+  .mainBox {
+    margin-inline: 15%;
+    margin-bottom: 20%;
+    margin-top: 10%;
+  }
+}
