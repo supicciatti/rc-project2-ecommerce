@@ -17,58 +17,65 @@
   <body>
     <!-- CAJA QUE CONTIENE TODO EL DOCUMENTO -->
     <div class="container-fluid">
-      <!-- CONTIENE LA PRIMERA SECCIÓN, HASTA PRODUCTOS RELACIONADOS -->
       <section>
-        <div class="d-flex flex-column flex-lg-row mb-5">
-          <!-- IMAGENES A LA IZQUIERDA DESDE TAMAÑO LG -->
-          <div class="d-none d-lg-block">
-            <div class="mt-3 imgBoxStyles">
-              <img class="imgSize" src="../assets/photos/samsung1.jpg" alt="" />
-            </div>
-            <div class="mt-3 imgBoxStyles">
-              <img class="imgSize" src="../assets/photos/samsung2.jpg" alt="" />
-            </div>
-            <div class="mt-3 imgBoxStyles">
-              <img class="imgSize" src="../assets/photos/samsung3.jpg" alt="" />
-            </div>
-          </div>
-          <!-- CAROUSEL DE IMG -->
-          <!-- Pendiente consultar cómo hago que las img del carousel sean las que se
-        ven a la izquierda en pantalla tamaño LG -->
-          <div class="mx-5 mt-4">
-            <div
-              id="carouselExampleSlidesOnly"
-              class="carousel slide"
-              data-ride="carousel"
-              data-interval="false"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="../assets/photos/productImage1.jpg"
-                    alt="First slide"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-10"
-                    src="../assets/photos/productImage1.jpg"
-                    alt="Second slide"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="../assets/photos/productImage1.jpg"
-                    alt="Third slide"
-                  />
-                </div>
+        <div class="d-flex flex-column flex-lg-row mb-4">
+          <!-- CAROUSEL DE PRODUCTO SELECCIONADO -->
+          <div
+            id="carouselExampleControls"
+            class="carousel slide col-lg-6"
+            data-ride="carousel"
+          >
+            <!-- Diapositivas -->
+            <div class="carousel-inner">
+              <div class="carousel-item active my-5">
+                <img
+                  class="d-block m-auto w-75"
+                  src="../assets/photos/samsung1.jpg"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item my-5">
+                <img
+                  class="d-block m-auto w-75"
+                  src="../assets/photos/deliveryIcon.png"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item my-5">
+                <img
+                  class="d-block m-auto w-75"
+                  src="../assets/photos/samsung3.jpg"
+                  alt="Third slide"
+                />
               </div>
             </div>
+
+            <!-- Controles de navegación -->
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
           </div>
           <!-- CAJA DESCRIPCIÓN PRODUCTO -->
-          <div class="my-3">
+          <div class="my-3 col-lg-3">
             <h2 class="my-2">
               Samsung Galaxy S23 Plus 8gb 256gb Phantom Black
             </h2>
@@ -95,10 +102,8 @@
               </ul>
             </div>
           </div>
-          <!-- DIV PARA DISEÑO VERTICAL -->
-          <div class="designBar"></div>
           <!-- CAJA CON BOTONES DE COMPRAS -->
-          <div class="d-flex flex-column">
+          <div class="d-flex flex-column mt-lg-5 col-lg-3">
             <div>
               <p class="text-center mt-3">
                 Cantidad: 1
@@ -121,239 +126,240 @@
         </div>
       </section>
     </div>
-    <!-- Carousel de prod relacionados -->
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide container-fluid"
-      data-ride="carousel"
-    >
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner mx-auto">
-        <div class="carousel-item active">
-          <div class="row m-3 justify-content-center text-center">
-            <div class="col-4">
-              <img
-                src="../assets/photos/samsung1.jpg"
-                class="img-fluid"
-                alt="imagen1"
-              />
-            </div>
-            <div class="col-4">
-              <img
-                src="../assets/photos/samsung2.jpg"
-                class="img-fluid"
-                alt="imagen1"
-              />
-            </div>
-            <div class="col-4">
-              <img
-                src="../assets/photos/samsung3.jpg"
-                class="img-fluid"
-                alt="imagen1"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row m-3 text-center">
-            <div class="col-4">
-              <img
-                src="../assets/photos/samsung1.jpg"
-                class="img-fluid"
-                alt="imagen1"
-              />
-            </div>
-            <div class="col-4">
-              <img
-                src="../assets/photos/samsung2.jpg"
-                class="img-fluid"
-                alt="imagen1"
-              />
-            </div>
-            <div class="col-4">
-              <img
-                src="../assets/photos/samsung3.jpg"
-                class="img-fluid"
-                alt="imagen1"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row m-3 text-center">
-            <div class="col-4">
-              <img
-                src="../assets/photos/loginImage.jpg"
-                class="img-fluid"
-                alt="imagen1"
-              />
-            </div>
-            <div class="col-4">
-              <img
-                src="../assets/photos/productImage1.jpg"
-                class="img-fluid"
-                alt="imagen1"
-              />
-            </div>
-            <div class="col-4">
-              <img
-                src="../assets/photos/deliveryIcon.png"
-                class="img-fluid"
-                alt="imagen1"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </a>
-    </div>
-    <!-- Caja descripción del producto -->
-    <div class="m-4 textBoxContainer">
-      <h4 class="my-2">Descripción</h4>
-      <div id="textBox" class="sumTextBox">
-        <h5>CAMARA</h5>
-        <p>
-          Hacé que las noches sean más épicas con la cámara nocturna Es un kit
-          de nivel profesional que cabe en una mano. La cámara posterior triple
-          y la cámara de selfie ofrecen hardware y software de cámara
-          innovadores para que puedas capturar fácilmente una galería llena de
-          contenido digno de compartir.
-        </p>
-        <h5>CÁMARA NOCTURNA</h5>
-        <p>
-          Mejorá tu vida nocturna #cámaranocturna Lo mejor sucede después de que
-          anochece. Capturá la imagen con las épicas actualizaciones
-          tecnológicas de nuestra cámara de nivel profesional. El sensor grande
-          de píxeles amplía los píxeles para atraer la luz mientras que el
-          cristal súper transparente reduce el resplandor de la lente, todo para
-          que las fotos y los videos nocturnos salgan tan claros como el día.
-        </p>
-        <h5>VIDEOS NOCTURNOS</h5>
-        <p>
-          La cámara nocturna captura las horas más oscuras La inspiración no
-          espera una iluminación óptima y ahora tampoco tenés que hacerlo. El
-          mayor salto en nuestra tecnología de video, la velocidad de fotogramas
-          automática coincide con la velocidad de fps de tu entorno y Super
-          Night Solution elimina el ruido en cada fotograma para obtener
-          imágenes vívidas de alta calidad, ya sea que estés bajo el sol o bajo
-          las estrellas.
-        </p>
-        <h5>RETRATOS DE NOCHE</h5>
-        <p>
-          La cámara nocturna pone los retratos bajo una nueva luz. Conseguí
-          retratos y autorretratos épicos con poca luz gracias a las
-          revolucionarias actualizaciones de la cámara posterior y la cámara de
-          selfie. Cada una captura más luz para lograr colores y detalles
-          increíbles, para que puedas dominar el modo Retrato en condiciones de
-          baja iluminación.
-        </p>
-        <h5>VIDEO CONTINUO</h5>
-        <p>
-          Ahora te movés y ya no importa La vida no se detiene. Pero tu video lo
-          hará. Nuestra cámara de nivel profesional graba videos nítidos y
-          estables que se mantienen fluidos incluso cuando te movés. ¿Cómo lo
-          hicimos? El ángulo de corrección de OIS ha sido mejorado en un 58 % y
-          funciona con muestreo de movimiento más rápido para estabilizar tus
-          tomas. Y tu día a día ahora es más épico y colorido con Super HDR que
-          captura la imagen con 64 veces más información de color, incluso si la
-          escena está retroiluminada.
-        </p>
-        <h5>ALTA RESOLUCIÓN</h5>
-        <p>
-          Cada detalle, ahora es tuyo para que lo captures. Fotografiá sin
-          parar. Siempre tendrás una galería de fotos nítidas y de alta calidad.
-          Dentro de este sensor de alta resolución se encuentra Adaptive Pixel,
-          que cambia los píxeles para adaptarse a la iluminación. Activá el
-          mejorador de detalles antes de hacer las capturas. Mejorá de manera
-          inteligente tus tomas al ajustar las sombras y los tonos claros.
-        </p>
-        <h5>BORRADOR DE OBJETOS</h5>
-        <p>
-          Las fotos arruinadas a propósito son cosa del pasado. Mantené el
-          enfoque donde pertenece: tu talento. Eliminá manualmente personas u
-          objetos del fondo de tus capturas, dejando solo lo que querés que vean
-          tus seguidores.
-        </p>
-        <h5>PANTALLA</h5>
-        <p>
-          Adiós, resplandor. Las asombrosas pantallas Infinity-O de 120 Hz están
-          diseñadas con Dynamic AMOLED 2X con tecnología Vision Booster para una
-          alta visibilidad al aire libre, lo que mantiene la vista nítida a
-          plena luz del día o de noche. Ahora el único resplandor que verás será
-          el de las cámaras de los celosos.
-        </p>
-        <h5>BATERÍA</h5>
-        <p>
-          Disfrutá la noche sin necesidad de cables. La vida no disminuye su
-          ritmo y tomar un descanso para recargar energía es una vía rápida para
-          la ansiedad de estar desconectado. La batería se adapta de manera
-          inteligente a la forma en que usás tu smartphone, por lo que dura más
-          de 24 horas
-        </p>
-      </div>
-      <a id="showMore" href="#textBox" onclick="showFullDescription()"
-        >Ver descripción completa</a
-      >
-    </div>
-    <!-- Caja de preguntas/respuestas -->
-    <div class="m-3">
-      <!-- Hacer una pregunta -->
+    <section>
       <div>
-        <h5 class="my-4">Preguntas y respuestas</h5>
-        <form>
-          <input
-            type="text"
-            class="form-control inputQuestionBox"
-            placeholder="Escribe tu pregunta..."
-          />
-          <div class="d-flex justify-content-center">
-            <button
-              type="submit"
-              class="btn buyNowButton text-center w-100 mt-2"
-            >
-              Enviar
-            </button>
+        <h4 class="text-center">Productos que quizás te interesen</h4>
+        <!-- Carousel de prod relacionados -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide container-fluid"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner mx-auto">
+            <div class="carousel-item active">
+              <div class="row m-3 justify-content-center text-center">
+                <div class="col-4">
+                  <img
+                    src="../assets/photos/samsung1.jpg"
+                    class="img-fluid"
+                    alt="imagen1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="../assets/photos/samsung2.jpg"
+                    class="img-fluid"
+                    alt="imagen1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="../assets/photos/samsung3.jpg"
+                    class="img-fluid"
+                    alt="imagen1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row m-3 text-center">
+                <div class="col-4">
+                  <img
+                    src="../assets/photos/samsung1.jpg"
+                    class="img-fluid"
+                    alt="imagen1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="../assets/photos/samsung2.jpg"
+                    class="img-fluid"
+                    alt="imagen1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="../assets/photos/samsung3.jpg"
+                    class="img-fluid"
+                    alt="imagen1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row m-3 text-center">
+                <div class="col-4">
+                  <img
+                    src="../assets/photos/loginImage.jpg"
+                    class="img-fluid"
+                    alt="imagen1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="../assets/photos/productImage1.jpg"
+                    class="img-fluid"
+                    alt="imagen1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="../assets/photos/deliveryIcon.png"
+                    class="img-fluid"
+                    alt="imagen1"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-        </form>
-      </div>
-      <!-- Últimas preguntas/respuestas -->
-      <div class="row questionBox m-3">
-        <div class="row">
-          <div id="userName" class="col-4">nombre de usuario</div>
-          <div id="userQuestion" class="col-8">pregunta</div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
         </div>
-        <div id="adminAnswer" class="col">respuesta</div>
       </div>
-    </div>
+      <!-- Caja descripción del producto -->
+      <div class="m-4 textBoxContainer">
+        <h4 class="my-2">Descripción</h4>
+        <div id="textBox" class="sumTextBox">
+          <h5>CAMARA</h5>
+          <p>
+            Hacé que las noches sean más épicas con la cámara nocturna Es un kit
+            de nivel profesional que cabe en una mano. La cámara posterior
+            triple y la cámara de selfie ofrecen hardware y software de cámara
+            innovadores para que puedas capturar fácilmente una galería llena de
+            contenido digno de compartir.
+          </p>
+          <h5>CÁMARA NOCTURNA</h5>
+          <p>
+            Mejorá tu vida nocturna #cámaranocturna Lo mejor sucede después de
+            que anochece. Capturá la imagen con las épicas actualizaciones
+            tecnológicas de nuestra cámara de nivel profesional. El sensor
+            grande de píxeles amplía los píxeles para atraer la luz mientras que
+            el cristal súper transparente reduce el resplandor de la lente, todo
+            para que las fotos y los videos nocturnos salgan tan claros como el
+            día.
+          </p>
+          <h5>VIDEOS NOCTURNOS</h5>
+          <p>
+            La cámara nocturna captura las horas más oscuras La inspiración no
+            espera una iluminación óptima y ahora tampoco tenés que hacerlo. El
+            mayor salto en nuestra tecnología de video, la velocidad de
+            fotogramas automática coincide con la velocidad de fps de tu entorno
+            y Super Night Solution elimina el ruido en cada fotograma para
+            obtener imágenes vívidas de alta calidad, ya sea que estés bajo el
+            sol o bajo las estrellas.
+          </p>
+          <h5>RETRATOS DE NOCHE</h5>
+          <p>
+            La cámara nocturna pone los retratos bajo una nueva luz. Conseguí
+            retratos y autorretratos épicos con poca luz gracias a las
+            revolucionarias actualizaciones de la cámara posterior y la cámara
+            de selfie. Cada una captura más luz para lograr colores y detalles
+            increíbles, para que puedas dominar el modo Retrato en condiciones
+            de baja iluminación.
+          </p>
+          <h5>VIDEO CONTINUO</h5>
+          <p>
+            Ahora te movés y ya no importa La vida no se detiene. Pero tu video
+            lo hará. Nuestra cámara de nivel profesional graba videos nítidos y
+            estables que se mantienen fluidos incluso cuando te movés. ¿Cómo lo
+            hicimos? El ángulo de corrección de OIS ha sido mejorado en un 58 %
+            y funciona con muestreo de movimiento más rápido para estabilizar
+            tus tomas. Y tu día a día ahora es más épico y colorido con Super
+            HDR que captura la imagen con 64 veces más información de color,
+            incluso si la escena está retroiluminada.
+          </p>
+          <h5>ALTA RESOLUCIÓN</h5>
+          <p>
+            Cada detalle, ahora es tuyo para que lo captures. Fotografiá sin
+            parar. Siempre tendrás una galería de fotos nítidas y de alta
+            calidad. Dentro de este sensor de alta resolución se encuentra
+            Adaptive Pixel, que cambia los píxeles para adaptarse a la
+            iluminación. Activá el mejorador de detalles antes de hacer las
+            capturas. Mejorá de manera inteligente tus tomas al ajustar las
+            sombras y los tonos claros.
+          </p>
+          <h5>BORRADOR DE OBJETOS</h5>
+          <p>
+            Las fotos arruinadas a propósito son cosa del pasado. Mantené el
+            enfoque donde pertenece: tu talento. Eliminá manualmente personas u
+            objetos del fondo de tus capturas, dejando solo lo que querés que
+            vean tus seguidores.
+          </p>
+          <h5>PANTALLA</h5>
+          <p>
+            Adiós, resplandor. Las asombrosas pantallas Infinity-O de 120 Hz
+            están diseñadas con Dynamic AMOLED 2X con tecnología Vision Booster
+            para una alta visibilidad al aire libre, lo que mantiene la vista
+            nítida a plena luz del día o de noche. Ahora el único resplandor que
+            verás será el de las cámaras de los celosos.
+          </p>
+          <h5>BATERÍA</h5>
+          <p>
+            Disfrutá la noche sin necesidad de cables. La vida no disminuye su
+            ritmo y tomar un descanso para recargar energía es una vía rápida
+            para la ansiedad de estar desconectado. La batería se adapta de
+            manera inteligente a la forma en que usás tu smartphone, por lo que
+            dura más de 24 horas
+          </p>
+        </div>
+        <a id="showMore" href="#textBox" onclick="showFullDescription()"
+          >Ver descripción completa</a
+        >
+      </div>
+      <!-- Caja de preguntas/respuestas -->
+      <div class="m-3">
+        <!-- Hacer una pregunta -->
+        <div>
+          <h5 class="my-4">Preguntas y respuestas</h5>
+          <form>
+            <textarea
+              class="form-control inputQuestionBox"
+              placeholder="Escribe tu pregunta..."
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div class="d-flex justify-content-center">
+              <button
+                type="submit"
+                class="btn buyNowButton text-center w-100 mt-2"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Últimas preguntas/respuestas -->
+        <div class="row questionBox m-3">
+          <div class="row">
+            <div id="userName" class="col-4">nombre de usuario</div>
+            <div id="userQuestion" class="col-8">pregunta</div>
+          </div>
+          <div id="adminAnswer" class="col">respuesta</div>
+        </div>
+      </div>
+    </section>
     <!-- Link Bootstrap 5 -->
+    <script src="../js/detalleProducto.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/detalleProducto.js"></script>
   </body>
 </html>
