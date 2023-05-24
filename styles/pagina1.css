@@ -6,7 +6,6 @@
 
 /*NAVBAR*/ 
 
-
 .navbar{
 
 
@@ -22,10 +21,6 @@ border-bottom: 1px solid transparent;
 .nav-item a:hover{
   color: #C651CD;
 }
-
-
-
-
 
 .nav-item .dropdown-item:hover{
   color: #8739F9;
