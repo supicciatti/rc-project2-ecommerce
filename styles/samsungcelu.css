@@ -1,116 +1,89 @@
 /*NAVBAR*/
 
-  .navbar{
-   border-bottom: 1px solid transparent;
-  box-shadow: 3px 9px 15px 0 rgba(2,0,0, .2);
+.navbar {
+  border-bottom: 1px solid transparent;
+  box-shadow: 3px 9px 15px 0 rgba(2, 0, 0, 0.2);
 }
-.nav-item .nav-link{
-  font-family:'Poppins', sans-serif;
+.nav-item .nav-link {
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   color: white;
   font-weight: 400;
 }
-.nav-item a:hover{
-  color: #C651CD;
+.nav-item a:hover {
+  color: #c651cd;
 }
-
-
-
-
-
-.nav-item .dropdown-item:hover{
-  color: #8739F9;
+.nav-item .dropdown-item:hover {
+  color: #8739f9;
   background-color: #dcdcdc;
-
 }
-
-.navbar-nav  .nav-item  .active{
+.navbar-nav .nav-item .active {
   color: white;
 }
-
-.navbar-nav img{
+.navbar-nav img {
   width: 90px;
   height: 30px;
-  }
-.btn-cart{
+}
+.btn-cart {
   border-radius: 20px;
-  border-color: #C651CD;
-  font-family:'Poppins', sans-serif; 
-
+  border-color: #c651cd;
+  font-family: "Poppins", sans-serif;
 }
-
-.btn-cart:hover{
-  background-color: #8739F9;
+.btn-cart:hover {
+  background-color: #8739f9;
 }
-
-.navbar-nav .nav-item{
+.navbar-nav .nav-item {
   color: white;
-  font-family:'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
-
-.navbar-nav .nav-item:hover{
-  color: #C651CD;;
-
+.navbar-nav .nav-item:hover {
+  color: #c651cd;
 }
+
 
 /* CARDS SAMSUNG */
-
-.text-center .samgung{
-  margin-top: 10rem;
-}
 
 .card{
   background: #242424;
   border-style: 1px solid white;
 }
-
 .text-center strong{
-  background: linear-gradient(to right, #C651CD,
-                    #8739F9);
+  background: linear-gradient(to right, #C651CD,#8739F9);
   font-size: 48px;
-    -webkit-text-fill-color: transparent;
-   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
-
-
 .bg-image{
   height: 300px; 
   overflow: hidden;
 }
-
 .bg-image img{
   transition: transform .5s ease;
 }
-
 .bg-image img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .text-reset p{
   color: #8739F9;
 }
-.bg-image .card-title{
+.card-body .card-title-h4{
   color: white;
 }
-
 .card-body .card-title{
   color: #C651CD;
 }
-
 .card-body .btn{
   border-color:#C651CD ;
   color: white;
   font-size: 20px;
   font-weight: bold;
 }
-
 .card-body .btn:hover{
   background-color:#C651CD ;
   color: #100F10;
 }
-
 
 
 /* FOOTER */
