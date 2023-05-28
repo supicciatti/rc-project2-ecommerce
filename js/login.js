@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const password = passwordInput.value;
 
     const users = JSON.parse(localStorage.getItem("users"));
-
+    /* users = [ ]*/
     let isLoggedIn = false;
     let loggedInUser;
 

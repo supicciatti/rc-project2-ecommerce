@@ -36,7 +36,7 @@ registrationForm.addEventListener("submit", (event) => {
   registrationForm.reset();
 });
 
-// Agregar un controlador de eventos a cada opción de avatar
+/* // Agregar un controlador de eventos a cada opción de avatar
 avatarOptions.forEach((option) => {
   option.addEventListener("click", () => {
     // Desactivar todas las opciones de avatar
@@ -49,7 +49,6 @@ avatarOptions.forEach((option) => {
   });
 });
 
-/* 
 document.addEventListener("DOMContentLoaded", function () {
   const forms = document.querySelectorAll(".needs-validation");
 
@@ -104,5 +103,4 @@ function calcularEdad(fechaNacimiento) {
     edad--;
   }
   return edad;
-}
- */
+} */

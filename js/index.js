@@ -83,43 +83,40 @@ function redirectToPage(suggestion) {
 }
 document.addEventListener("DOMContentLoaded", function () {
   // Verificar si el usuario ha iniciado sesión consultando localStorage
+
   let isLoggedIn = localStorage.getItem("isLoggedIn");
+  // isLoggedIn = true
   let loggedInUser = localStorage.getItem("loggedInUser");
 
+  /* avatar: "/assets/photos/cuteBear.jpg";
+email: "enzosupicciatti97@gmail.com";
+password: "Enzo1234";
+username: "Enzo Supicciatti"; */
   if (isLoggedIn === "true" && loggedInUser) {
     // El usuario ha iniciado sesión, modificar el estilo y contenido del navbar
     let navbar = document.getElementById("navbar");
-    let loginBtn = document.getElementById("login-btn");
-    let createAccountLink = document.getElementById("create-account-link");
-    let userInfoContainer = document.getElementById("user-info");
+    let myAccount = document.getElementById("myAccount");
 
-    if (navbar !== null) {
-      navbar.classList.add("logged-in"); // Agrega la clase "logged-in" al navbar
+    // Obtener los datos del usuario logueado del localStorage
+    let userAttributes = JSON.parse(loggedInUser);
 
-      // Ocultar los botones de "Ingresar" y "Crear cuenta"
-      if (loginBtn !== null) {
-        loginBtn.style.display = "none";
-      }
-      if (createAccountLink !== null) {
-        createAccountLink.style.display = "none";
-      }
+    myAccount.textContent = `Hola ${userAttributes.username} ! `;
+    myAccount.style.textAlign = "center";
 
-      // Obtener los datos del usuario logueado del localStorage
-      let userAttributes = JSON.parse(loggedInUser);
+    // Crear y agregar la imagen del avatar
 
-      // Crear y agregar el mensaje de saludo
-      let greeting = document.createElement("span");
-      greeting.textContent = `Hola ${userAttributes.username}!`;
-      greeting.classList.add("navbar-text", "mr-2");
-      userInfoContainer.appendChild(greeting);
+    let avatarImg = document.createElement("img");
+    avatarImg.src = userAttributes.avatar;
+    avatarImg.classList.add("avatar-img");
+    myAccount.appendChild(avatarImg);
 
-      // Crear y agregar la imagen del avatar
-      let avatarImg = document.createElement("img");
-      avatarImg.src = userAttributes.avatar;
-      avatarImg.classList.add("avatar-img");
-      userInfoContainer.appendChild(avatarImg);
-      console.log(userAttributes.avatar);
-      console.log(userAttributes.username);
-    }
+    //PENDIENTE HACER QUE CUANDO USUARIO ESTÉ LOGEADO, LLEVE A PRODUCTOS FAVORITOS
+
+    // Agrega la clase "logged-in" al navbar, la cual modificará su apariencia
+    navbar.classList.add("logged-in");
+  } else {
+    // No hay usuario registrado, mostrar "Mi Cuenta"
+    myAccount.textContent = "Mi Cuenta";
+    myAccount.href = "/pages/login.html";
   }
 });

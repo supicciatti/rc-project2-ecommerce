@@ -7,6 +7,7 @@
 /*NAVBAR*/
 
 .navbar {
+  background-color: black;
   border-bottom: 1px solid transparent;
   box-shadow: 3px 9px 15px 0 rgba(2, 0, 0, 0.2);
 }
@@ -44,7 +45,7 @@
 }
 
 .navbar-nav .nav-item {
-  color: white;
+  color: black;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -223,5 +224,14 @@ footer {
   cursor: pointer;
 }
 .logged-in {
-  background-color: white;
+  background-image: linear-gradient(to right, #c651cd, #8739f9);
+}
+
+img.avatar-img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #8739f9;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0.5px 0.5px 6px 1px #8739f9;
 }
