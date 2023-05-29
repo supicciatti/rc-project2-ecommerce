@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,63 +29,99 @@
     <!-------TITULO----->
     <title>Página de administracion</title>
   </head>
+
   <body>
-    <div class="container m-5">
+    <div>
+      <div class="mb-3">
+        <h1 class="titulo text-center">Productos cargados</h1>
+      </div>
+
+      <!------------TABLA DE PRODUCTOS----------->
       <div class="container">
-        <h1>Tabla de Productos</h1>
-        <table class="table">
+        <table class="table table-dark table-hover text-center">
           <thead>
             <tr>
               <th scope="col">#</th>
+              <th scope="col">Código</th>
               <th scope="col">Imagen</th>
               <th scope="col">Nombre</th>
-              <th scope="col">Precio</th>
+              <th scope="col">Precio de venta</th>
               <th scope="col">Unidades</th>
               <th scope="col">Acciones</th>
             </tr>
           </thead>
-          <tbody id="tbody">
-            <!-- Aquí se generará dinámicamente el contenido de la tabla -->
-          </tbody>
+          <tbody></tbody>
         </table>
+        <div class="container mt-5">
+          <div id="divFormulario">
+            <h2 class="titulo text-center">Agregar Producto</h2>
+            <form id="formulario">
+              <div class="mb-3">
+                <label for="inputCodigo" class="form-label">Código</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputCodigo"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputImagen" class="form-label">Imagen</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="inputImagen"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputNombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputNombre"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputPrecioVenta" class="form-label"
+                  >Precio de venta</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputPrecioVenta"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputUnidades" class="form-label">Unidades</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputUnidades"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Agregar</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            id="botonAgregarProducto"
+            type="button"
+            class="btn btn-success container col-4"
+            data-toggle="modal"
+            data-target="#formulario"
+          >
+            Agregar producto
+          </button>
+        </div>
       </div>
     </div>
-      <!-- Modal de Edición -->
-    <div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="modalEditarLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalEditarLabel">Editar Producto</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="formEditar">
-            <div class="mb-3">
-              <label for="editarNombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="editarNombre">
-            </div>
-            <div class="mb-3">
-              <label for="editarPrecio" class="form-label">Precio</label>
-              <input type="text" class="form-control" id="editarPrecio">
-            </div>
-            <div class="mb-3">
-              <label for="editarUnidades" class="form-label">Unidades</label>
-              <input type="text" class="form-control" id="editarUnidades">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" id="guardarCambios">Guardar Cambios</button>
-        </div>
-      </div>
-    </div>
-  </div>
-    <script src="/js/administracionPrueba.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="/js/administracion.js"></script>
   </body>
 </html>

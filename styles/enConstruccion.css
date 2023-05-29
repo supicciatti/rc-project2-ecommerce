@@ -1,0 +1,15 @@
+body {
+  background-image: url(/assets/photos/enConstruccion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.mainBox {
+  background-color: grey;
+  margin-top: 20rem;
+}
+
+h4 {
+  color: white;
+}

@@ -1,125 +1,246 @@
-let products = [
-  {
-    imagen: "../assets/photos/tv1.png",
-    titulo: "Televisor Samsung",
-    precio: 50000,
-    promocion: "20% OFF exclusivo para venta online",
-    unidades: 124,
-    id: 1,
-  },
-  {
-    imagen: "../assets/photos/aire1.png",
-    titulo: "Aire acondicionado",
-    precio: 180000,
-    promocion: "10% OFF exclusivo para venta online",
-    unidades: 285,
-    id: 2,
-  },
-  {
-    imagen: "../assets/photos/celu1.png",
-    titulo: "Samsung Galaxy S23 PLUS",
-    precio: 259000,
-    promocion: "Envío gratis exclusivo desde la app",
-    unidades: 74,
-    id: 3,
-  },
-  {
-    imagen: "../assets/photos/lavarropa3.png",
-    titulo: "Lavadora LG",
-    precio: 85000,
-    promocion: "15% OFF en todas las capacidades",
-    unidades: 142,
-    id: 4,
-  },
-  {
-    imagen: "../assets/photos/tv3.png",
-    titulo: "Heladera Whirlpool",
-    precio: 120000,
-    promocion: "Envío gratis en CABA",
-    unidades: 98,
-    id: 5,
-  },
-  {
-    imagen: "../assets/photos/notebook2.png",
-    titulo: "Microondas Panasonic",
-    precio: 35000,
-    promocion: "30% OFF en modelos seleccionados",
-    unidades: 210,
-    id: 6,
-  },
-  {
-    imagen: "../assets/photos/motorola4.png",
-    titulo: "Aspiradora Electrolux",
-    precio: 55000,
-    promocion: "Envío gratis a todo el país",
-    unidades: 67,
-    id: 7,
-  },
-  {
-    imagen: "../assets/photos/notebook3.png",
-    titulo: "Licuadora Oster",
-    precio: 25000,
-    promocion: "10% OFF en todos los modelos",
-    unidades: 183,
-    id: 8,
-  },
-  {
-    imagen: "../assets/photos/video.png",
-    titulo: "Cafetera Nespresso",
-    precio: 8000,
-    promocion: "Capsulas de regalo en la compra",
-    unidades: 123,
-    id: 9,
-  },
-  {
-    imagen: "../assets/photos/apple5.png",
-    titulo: "Plancha Philips",
-    precio: 4500,
-    promocion: "20% OFF en todos los modelos",
-    unidades: 95,
-    id: 10,
-  },
-  {
-    imagen: "../assets/photos/motorola3.png",
-    titulo: "Ventilador de pie",
-    precio: 3000,
-    promocion: "Envío gratis a partir de 2 unidades",
-    unidades: 180,
-    id: 11,
-  },
-  {
-    imagen: "../assets/photos/apple1.png",
-    titulo: "Licuadora Moulinex",
-    precio: 28000,
-    promocion: "Descuento exclusivo con tarjeta de crédito",
-    unidades: 75,
-    id: 12,
-  },
-];
+// Obtener los productos almacenados en el localStorage
+let productsJSON = localStorage.getItem("products");
 
-let tbody = document.getElementById("tbody");
-
-for (let i = 0; i < 9; i++) {
-  let product = products[i];
-
-  let trow = document.createElement("tr");
-  trow.innerHTML = `<td>${product.id}</td>
-    <td><img src="${product.imagen}"alt="Imagen del producto"></td>
-    <td>${product.titulo}</td>
-    <td>${product.precio}</td>
-    <td>${product.unidades}</td>
-    <td>
-      <button class="btn btn-primary">Agregar</button>
-      <button class="btn btn-secondary data-producto-index="${product.id}" data-bs-toggle="modal" data-bs-target="#modalEditar">Editar</button>
-      <button class="btn btn-danger">Eliminar</button>
-    </td>`;
-
-  tbody.appendChild(trow);
+if (productsJSON) {
+  // Convertir la cadena JSON a un array de objetos
+  products = JSON.parse(productsJSON);
+} else {
+  products = [
+    {
+      imagen: "../assets/photos/videoSize.png",
+      titulo: "Play Station 5",
+      precio: 274999,
+      promocion: "20% OFF exclusivo para venta online",
+      unidades: 124,
+      id: 1,
+      codigo: 4783,
+    },
+    {
+      imagen: "../assets/photos/tv3Size.png",
+      titulo: "Smart TV NOBLEX 32'",
+      precio: 65000,
+      promocion: "10% OFF exclusivo para venta online",
+      unidades: 285,
+      id: 2,
+      codigo: 6241,
+    },
+    {
+      imagen: "../assets/photos/tv1Size.png",
+      titulo: "Smart TV HITACHI 32'",
+      precio: 63999,
+      promocion: "Envío gratis exclusivo desde la app",
+      unidades: 74,
+      id: 3,
+      codigo: 2058,
+    },
+    {
+      imagen: "../assets/photos/notebook3Size.png",
+      titulo: "Notebook ACER 8GB RAM 256GB SSD",
+      precio: 179299,
+      promocion: "15% OFF en todas las capacidades",
+      unidades: 142,
+      id: 4,
+      codigo: 7612,
+    },
+    {
+      imagen: "../assets/photos/motorola4Size.png",
+      titulo: "Motorola E32 Dual Sim",
+      precio: 63999,
+      promocion: "Envío gratis en CABA",
+      unidades: 98,
+      id: 5,
+      codigo: 9199,
+    },
+    {
+      imagen: "../assets/photos/notebook2Size.png",
+      titulo: "Notebook DELL 4GB RAM ",
+      precio: 123999,
+      promocion: "30% OFF en modelos seleccionados",
+      unidades: 210,
+      id: 6,
+      codigo: 1267,
+    },
+    {
+      imagen: "../assets/photos/lavarropa3Size.png",
+      titulo: "Lavarropas DREAN",
+      precio: 249999,
+      promocion: "Envío gratis a todo el país",
+      unidades: 67,
+      id: 7,
+      codigo: 3784,
+    },
+    {
+      imagen: "../assets/photos/celu1Size.png",
+      titulo: "Motorola MOTO G4",
+      precio: 92999,
+      promocion: "10% OFF en todos los modelos",
+      unidades: 183,
+      id: 8,
+      codigo: 5327,
+    },
+    {
+      imagen: "../assets/photos/apple5Size.png",
+      titulo: "iPhone 13 PRO MAX",
+      precio: 189499,
+      promocion: "Envío gratis",
+      unidades: 123,
+      id: 9,
+      codigo: 1529,
+    },
+    {
+      imagen: "../assets/photos/aire1Size.png",
+      titulo: "Aire acondicionado NOBLEX 3200 Watts Frio Calor",
+      precio: 239000,
+      promocion: "20% OFF abonando en efectivo en sucursales",
+      unidades: 95,
+      id: 10,
+      codigo: 8516,
+    },
+  ];
+  guardarProductosEnLocalStorage();
 }
 
-/* // Obtiene el arreglo de productos en formato JSON
-let productsJSON = JSON.stringify(products);
+// Llamar a la función para renderizar los productos
+renderproducts();
+
+// Función para renderizar los productos en la tabla
+function renderproducts() {
+  let tbody = document.querySelector("tbody");
+  tbody.innerHTML = "";
+
+  products.forEach(function (product) {
+    let row = document.createElement("tr");
+    row.innerHTML = `
+      <th scope="row">${product.id}</th>
+      <td>${product.codigo}</td>
+      <td><img src="${product.imagen}" alt="${product.titulo}"></td>
+      <td>${product.titulo}</td>
+      <td class="precioVenta">${product.precio}</td>
+      <td class="unidades">${product.unidades}</td>
+      <td>
+        <button type="button" class="btn btn-warning editar" data-id="${product.id}">Editar</button>
+        <button type="button" class="btn btn-danger eliminar" data-id="${product.id}">Eliminar</button>
+      </td>
+    `;
+
+    tbody.appendChild(row);
+  });
+
+  // Agregar event listeners a los botones de editar y eliminar
+  let editButtons = document.querySelectorAll(".editar");
+  editButtons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      //extrae el valor del atributo data-id del elemento HTML que desencadenó el evento y lo almacena en la variable id como un número entero.
+      let id = parseInt(event.target.dataset.id, 10);
+      let precio = prompt("Ingrese el nuevo precio de venta:");
+      let unidades = prompt("Ingrese las nuevas unidades:");
+
+      actualizarProducto(id, precio, unidades);
+    });
+  });
+
+  let deleteButtons = document.querySelectorAll(".eliminar");
+  deleteButtons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      let id = parseInt(event.target.dataset.id, 10);
+      eliminarProducto(id);
+    });
+  });
+}
+
+// Función para obtener un producto por su ID
+function getProductoById(id) {
+  return products.find(function (producto) {
+    return producto.id === id;
+  });
+}
+
+// Función para actualizar los datos de un producto
+function actualizarProducto(id, precio, unidades) {
+  let producto = getProductoById(id);
+  if (producto) {
+    producto.precio = precio;
+    producto.unidades = unidades;
+    renderproducts();
+    alert(`Producto actualizado: ${producto.titulo}`);
+    guardarProductosEnLocalStorage();
+  }
+}
+
+// Función para eliminar un producto
+function eliminarProducto(id) {
+  let index = products.findIndex(function (product) {
+    return product.id === id;
+  });
+
+  if (index !== -1) {
+    let producto = products[index];
+    products.splice(index, 1);
+    renderproducts();
+    alert(`Producto eliminado: ${producto.titulo}`);
+    guardarProductosEnLocalStorage();
+  }
+}
+
+// Obtener el formulario y agregar un event listener para el evento "submit"
+let formulario = document.getElementById("formulario");
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault(); // Evitar el envío del formulario por defecto
+
+  // Obtener los valores ingresados en el formulario
+  let codigo = document.getElementById("inputCodigo").value;
+  let imagen = document.getElementById("inputImagen").files[0];
+  let titulo = document.getElementById("inputNombre").value;
+  let precio = document.getElementById("inputPrecioVenta").value;
+  let unidades = document.getElementById("inputUnidades").value;
+
+  imagen = URL.createObjectURL(imagen);
+  // Crear un nuevo objeto de producto con los valores ingresados
+  let nuevoProducto = {
+    id: products.length + 1,
+    codigo: codigo,
+    imagen: imagen,
+    titulo: titulo,
+    precio: precio,
+    unidades: unidades,
+  };
+
+  // Agregar el nuevo producto al array de productos
+  products.push(nuevoProducto);
+
+  // Limpiar los valores del formulario
+  formulario.reset();
+
+  // Volver a renderizar la tabla de products con el nuevo producto incluido
+  renderproducts();
+  alert(`Producto agregado exitosamente: ${nuevoProducto.titulo}`);
+  guardarProductosEnLocalStorage();
+});
+
+// ...
+
+// Obtener el botón "Agregar producto"
+let botonAgregar = document.getElementById("botonAgregarProducto");
+
+// Obtener el formulario
+formulario = document.getElementById("formulario");
+
+// Agregar un event listener al botón "Agregar producto"
+botonAgregar.addEventListener("click", function () {
+  formulario.style.display = "block"; // Mostrar el formulario
+});
+
+// Agregar un event listener al formulario para ocultarlo cuando se envía
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault(); // Evitar el envío del formulario por defecto
+  formulario.style.display = "none"; // Ocultar el formulario después de enviarlo
+});
+
+// Llamar a la función para renderizar los productos
+renderproducts();
 
 // Guardar los productos en el localStorage
-localStorage.setItem("products", productsJSON);
- */
+function guardarProductosEnLocalStorage() {
+  let productsJSON = JSON.stringify(products);
+  localStorage.setItem("products", productsJSON);
+}
