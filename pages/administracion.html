@@ -81,13 +81,43 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="container mt-5">
+                <div id="formulario" style="display: none;">
+                <h2 class="titulo text-center">Agregar Producto</h2>
+                <form id="formulario">
+                  <div class="mb-3">
+                    <label for="inputCodigo" class="form-label">Código</label>
+                    <input type="text" class="form-control" id="inputCodigo" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputImagen" class="form-label">Imagen</label>
+                    <input type="text" class="form-control" id="inputImagen" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputNombre" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputPrecioVenta" class="form-label">Precio de venta</label>
+                    <input type="text" class="form-control" id="inputPrecioVenta" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputUnidades" class="form-label">Unidades</label>
+                    <input type="text" class="form-control" id="inputUnidades" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Agregar</button>
+                </form>
+                </div>
+              </div>
+              
             <div class="text-center">
-                <button type="button" class="btn btn-success container col-4">Agregar pruducto</button>
+                <button type="button" class="btn btn-success container col-4" data-toggle="modal" data-target="#formulario">Agregar producto</button>
             </div>
         </div>
-
     </div>
 
+
+    <script src="/js/administracion.js"></script>
 </body>
 
 </html>
