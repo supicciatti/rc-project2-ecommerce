@@ -6,7 +6,6 @@
 
 /*NAVBAR*/ 
 
-
 .navbar{
 
 
@@ -22,10 +21,6 @@ border-bottom: 1px solid transparent;
 .nav-item a:hover{
   color: #C651CD;
 }
-
-
-
-
 
 .nav-item .dropdown-item:hover{
   color: #8739F9;
@@ -228,3 +223,27 @@ border-bottom: 1px solid transparent;
   color: white;
   font-size: 17px;
  }
+
+ .input-group {
+  position: relative; /* Agregamos esta propiedad */
+}
+
+#suggestions {
+  position: absolute;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  z-index: 999;
+  margin-top: 0;
+  padding-left: 0;
+  top: 100%; /* Agregamos esta propiedad */
+  left: 0; /* Agregamos esta propiedad */
+}
+
+
+.list-group-item {
+  cursor: pointer;
+}

@@ -9,9 +9,14 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- Bootstrap-->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<<<<<<< HEAD
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <link rel="icon" type="image/-xicon" href="../Assets/photos/logo4.png">
+=======
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="icon" type="image/-xicon" href="assets/photos/logo4.png">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
   <title>Pagina Principal</title>
 </head>
 <body style="background-color: #363636;">
@@ -19,24 +24,19 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
     <div class="container-fluid">
         <a href="index.html"><img src="assets/photos/logo4.png" width="90px"></a>
-       
+
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav">
-                
-                <div class="nav-item dropdown">
+
+                <div class="nav-item dropdown ">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Celulares</a>
                     <div class="dropdown-menu">
-                        <a href="#" target="_blank" class="dropdown-item">Celulares Samsung</a>
-                        <a href="#" target="_blank" class="dropdown-item">Celulares Motorola</a>
+                        <a href="pages/samsungCelu.html" target="_blank" class="dropdown-item">Celulares Samsung</a>
+                        <a href="pages/motorola.html" target="_blank" class="dropdown-item">Celulares Motorola</a>
                         <a href="#" target="_blank" class="dropdown-item">Celulares Apple</a>
-                        
-                        
-                        
-                        
-
                     </div>
                 </div>
                 <div class="nav-item dropdown">
@@ -44,23 +44,23 @@
                     <div class="dropdown-menu">
                         <a href="#" target="_blank" class="dropdown-item">Notebooks</a>
                         <a href="#" class="dropdown-item">Tablets</a>
-                        
-                        
+
+
                         <a href="#" class="dropdown-item">Videos juegos</a>
-                        
+
 
                     </div>
                 </div>
-                
+
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Electrodomesticos</a>
                     <div class="dropdown-menu">
                         <a href="#" target="_blank" class="dropdown-item">Heladeras</a>
-                        
-                        
+
+
                         <a href="#" class="dropdown-item">Lavarropas</a>
                         <a href="#" class="dropdown-item">Aires</a>
-                        
+
 
                     </div>
                 </div>
@@ -69,8 +69,8 @@
                     <div class="dropdown-menu">
                         <a href="#" class="dropdown-item">Smart Tv</a>
                         <a href="#" class="dropdown-item">Parlantes portatiles</a>
-                        
-                        
+
+
 
                     </div>
                 </div>
@@ -80,16 +80,19 @@
                    </li>
                 </ul>
 
-                
+
 
             </div>
             <form class="d-flex">
-                <div class="input-group">                    
-                    <input type="text" class="form-control" placeholder="Search">
-                    <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                <div class="input-group">
+                  <input id="searchInput" type="text" class="form-control" placeholder="Buscar...">
+                  <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                  <ul id="suggestions" class="list-group"></ul>
                 </div>
+
             </form>
-            
+
+
             <div class="navbar-nav">
                 <a href="#"><button class="btn-cart"><img src="../Assets/photos/cart-red.svg"></a></button>
             <a href="#" class="nav-item nav-link">Ingresá</a>
@@ -116,7 +119,7 @@
     <div class="carousel-item">
       <img src="../Assets/photos/slider3.png" class="d-block w-100" alt="...">
     </div>
-    
+
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -129,7 +132,7 @@
 </div>
 
 
-   
+
 
 
 
@@ -139,7 +142,11 @@
   <div class="col-sm-6 mb-3 mb-sm-0 mt-5 ">
     <div class="card" style="background-color: #242424;">
       <div class="card-body">
+<<<<<<< HEAD
         <h5 class="card-title">PAGO EN EFECTIVO <img src= "../Assets/photos/cash.png" style="width:2rem"></h5>
+=======
+        <h5 class="card-title">PAGO EN EFECTIVO <img src= "assets/photos/cash.png" style="width:2rem"></h5>
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
         <p class="card-text">Tus compras la podes pagar en efectivo.Rapido,seguro y al se acredita al instante  </p>
         <a href="#" class="btn btn-primary">Ver mas</a>
       </div>
@@ -148,7 +155,11 @@
   <div class="col-sm-6 mt-5">
     <div class="card" style="background-color: #242424;">
       <div class="card-body">
+<<<<<<< HEAD
         <h5 class="card-title"> TARJETAS DE CREDITO <img src= "../Assets/photos/credit.png" style="width:2rem"></h5>
+=======
+        <h5 class="card-title"> TARJETAS DE CREDITO <img src= "assets/photos/credit.png" style="width:2rem"></h5>
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
         <p class="card-text">Podes chequear las promociones de tu banco y realizar tus compras en cuotas</p>
         <a href="#" class="btn btn-primary">Ver más </a>
       </div>
@@ -162,30 +173,39 @@
 
   <h1 class="titulo text-center">Productos destacados</h1>
 <div class="container-fluid">
-    
+
     <div class="container p-5">
       <div class="row">
-        
+
         <div class="col-lg-4 col-md-12 mb-4">
           <div class="card card1 h-100">
             <div class="card-body ">
               <div>
+<<<<<<< HEAD
                 
                  <img class = "img-fluid "src="../Assets/photos/tv1.png" style="width:19rem">
+=======
+
+                 <img class = "img-fluid " src= "assets/photos/tv1.png" style="width:19rem">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
                  <br><br>
                   <h5 class="card-title d-flex align-items-center justify-content-center">Televisor Samsung</h5>
 
               </div>
-              
+
               <h3 class="precio d-flex align-items-center justify-content-center" >$50000</h3>
               <h5 class="online" style="color:white;">20% exclusivo para venta online</h5>
               <div class="d-grid my-3">
+<<<<<<< HEAD
                 <button class="btn btn-outline-red btn-block"><img src="../Assets/photos/carro.png" style="width:3rem">Comprar</button>
+=======
+                <button class="btn btn-outline-red btn-block"><img src="assets/photos/carro.png" style="width:3rem">Comprar</button>
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
               </div>
-              
+
             </div>
 
-            
+
           </div>
         </div>
 
@@ -193,23 +213,32 @@
           <div class="card card1 h-100">
             <div class="card-body ">
               <div>
+<<<<<<< HEAD
                 
                  <img class = "img-fluid"src="../Assets/photos/aire1.png" style="width:19rem">
+=======
+
+                 <img class = "img-fluid" src="assets/photos/aire1.png" style="width:19rem">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
                  <br><br>
                   <h5 class="card-title d-flex align-items-center justify-content-center">Aire Acondicionado</h5>
 
               </div>
-              
+
               <h3 class="precio d-flex align-items-center justify-content-center" >$50000</h3>
               <h5 class="online" style="color:white;">20% exclusivo para venta online</h5>
-              
+
               <div class="d-grid my-3">
+<<<<<<< HEAD
                 <button class="btn btn-outline-red btn-block"><img src="../Assets/photos/carro.png" style="width:3rem">Comprar</button>
+=======
+                <button class="btn btn-outline-red btn-block"><img src="assets/photos/carro.png" style="width:3rem">Comprar</button>
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
               </div>
-              
+
             </div>
 
-            
+
           </div>
         </div>
 
@@ -218,29 +247,38 @@
           <div class="card card1 h-100">
             <div class="card-body ">
               <div>
+<<<<<<< HEAD
                 
                  <img class = "img-fluid"src="../Assets/photos/celu1.png" style="width:19rem">
+=======
+
+                 <img class = "img-fluid" src="assets/photos/celu1.png" style="width:19rem">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
                  <br><br>
                   <h5 class="card-title d-flex align-items-center justify-content-center">Celular Motorola 5G</h5>
 
               </div>
-              
-              
+
+
               <h3 class="precio d-flex align-items-center justify-content-center" >$50000</h3>
               <h5 class="online" style="color:white;">20% exclusivo para venta online</h5>
-              
+
               <div class="d-grid my-3">
+<<<<<<< HEAD
                 <button class="btn btn-outline-red btn-block"><img src="../Assets/photos/carro.png" style="width:3rem">Comprar</button>
+=======
+                <button class="btn btn-outline-red btn-block"><img src="assets/photos/carro.png" style="width:3rem">Comprar</button>
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
               </div>
-              
+
             </div>
 
-            
+
           </div>
         </div>
        <div class="catalogo d-flex align-items-center justify-content-center">
-           
-       
+
+
         <a href=""><button class="boton-catalogo ">Ver catalogo completo</button></a>
         </div>
 
@@ -253,10 +291,14 @@
    <!-- CARDS DESCUENTOS -->
  <h1 class="titulo text-center mb-5">Aprovechá los descuentos</h1>
    <div class="row row-cols-1 row-cols-md-3 g-4" >
-    
+
   <div class="col">
     <div class="card">
+<<<<<<< HEAD
       <img src="../Assets/photos/descuento1.jpg" class="card-img-top" alt="...">
+=======
+      <img src="assets/photos/descuento1.jpg" class="card-img-top" alt="...">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
       <div class="card-body">
         <h5 class="card-title">Ofertas y liquidación</h5>
         <p class="card-text">Todo lo que necesitas para tu hogar y la comodidad de tu familia</p>
@@ -265,7 +307,11 @@
   </div>
   <div class="col">
     <div class="card">
+<<<<<<< HEAD
       <img src="../Assets/photos/descuento2.jpg" class="card-img-top" alt="...">
+=======
+      <img src="assets/photos/descuento2.jpg" class="card-img-top" alt="...">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
       <div class="card-body">
         <h5 class="card-title">Ofertas del 35%</h5>
         <p class="card-text">Todo lo que necesitas para tu oficina y para el cole de tu hijo</p>
@@ -274,7 +320,11 @@
   </div>
   <div class="col">
     <div class="card">
+<<<<<<< HEAD
       <img src="../Assets/photos/descuento4.jpg" class="card-img-top" alt="...">
+=======
+      <img src="assets/photos/descuento4.jpg" class="card-img-top" alt="...">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
       <div class="card-body">
         <h5 class="card-title">Descuentos del 40% en Notebooks</h5>
         <p class="card-text">Las mejores ofertas para que compres tu notebook de tu marca preferida</p>
@@ -283,7 +333,11 @@
   </div>
   <div class="col">
     <div class="card">
+<<<<<<< HEAD
       <img src="../Assets/photos/descuento5.jpg" class="card-img-top" alt="...">
+=======
+      <img src="assets/photos/descuento5.jpg" class="card-img-top" alt="...">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
       <div class="card-body">
         <h5 class="card-title">Descuentos del 50%</h5>
         <p class="card-text">Los electrodomesticos de linea blanca  que necesitas lo conseguis en nuestra sucursales</p>
@@ -293,7 +347,11 @@
 
   <div class="col">
     <div class="card">
+<<<<<<< HEAD
       <img src="../Assets/photos/descuento6.jpg" class="card-img-top" alt="...">
+=======
+      <img src="assets/photos/descuento6.jpg" class="card-img-top" alt="...">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
       <div class="card-body">
         <h5 class="card-title">Mayo de Ofertas</h5>
         <p class="card-text">Acercate a nuestras sucursales sorprendete con los descuentos que ofrecemos</p>
@@ -303,7 +361,11 @@
 
   <div class="col">
     <div class="card">
+<<<<<<< HEAD
       <img src="../Assets/photos/descuento8.jpg" class="card-img-top" alt="...">
+=======
+      <img src="assets/photos/descuento8.jpg" class="card-img-top" alt="...">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
       <div class="card-body">
         <h5 class="card-title">Descuentos fabulosos</h5>
         <p class="card-text">Si tienes tarjeta de creditos llevate lo que necesites y recibi los mejores descuentos</p>
@@ -316,8 +378,8 @@
 
 <!-- LO MAS VENDIDOS -->
 
-<h1 class="titulo text-center mb-5">Lo mas vendido</h1> 
-    
+<h1 class="titulo text-center mb-5">Lo mas vendido</h1>
+
 <section class=>
          <div class="container mt-5">
     <div class="row">
@@ -327,18 +389,26 @@
         <div class="card1 py-6 px-lg-8 h-100">
           <div class="card-body d-flex flex-column">
             <div class="text-center">
+<<<<<<< HEAD
               <img src="../Assets/photos/tv3.png" class="img-fluid  mb-6" alt="Websearch">
+=======
+              <img src="assets/photos/tv3.png" class="img-fluid  mb-6" alt="Websearch">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
             </div>
             <br>
             <br>
 
             <div class="card-title mb-4 text-center fs-2">Tv Smart</div>
-            
+
             <div class="text-center mt-auto mb-4">
              <h5 class="text-vendido">Lavarropas carga frontal 8 kg</h5>
               <h3 class="precio-vendido">$180000</h3>
             </div>
+<<<<<<< HEAD
             <div class="text-center " ><button type="button" class="btn btncolor"><img src="../Assets/photos/carro.png" style="width:2rem">Comprar</button></div>
+=======
+            <div class="text-center " ><button type="button" class="btn btncolor"><img src="assets/photos/carro.png" style="width:2rem">Comprar</button></div>
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
 
           </div>
         </div>
@@ -350,16 +420,24 @@
         <div class="card1 py-6 px-lg-8 h-100">
           <div class="card-body d-flex flex-column">
             <div class="text-center">
+<<<<<<< HEAD
               <img src="../Assets/photos/video.png" class="img-fluid  mb-5" alt="Websearch">
+=======
+              <img src="assets/photos/video.png" class="img-fluid  mb-5" alt="Websearch">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
             </div>
 
             <div class="card-title mb-4 text-center fs-2">Play station</div>
-            
+
             <div class="text-center mt-auto mb-4">
               <h5 class="text-vendido">Lavarropas carga frontal 8 kg</h5>
               <h3 class="precio-vendido">$180000</h3>
             </div>
+<<<<<<< HEAD
             <div class="text-center"><button type="button" class="btn btncolor"><img src="../Assets/photos/carro.png"style="width:2rem" >Comprar</button></div>
+=======
+            <div class="text-center"><button type="button" class="btn btncolor"><img src="assets/photos/carro.png"style="width:2rem" >Comprar</button></div>
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
 
           </div>
         </div>
@@ -367,7 +445,7 @@
 
 
 
-     
+
 
 
 
@@ -376,16 +454,24 @@
         <div class="card1 py-6 px-lg-8 h-100">
           <div class="card-body d-flex flex-column">
             <div class="text-center">
+<<<<<<< HEAD
               <img src="../Assets/photos/lavarropa3.png" class="img-fluid  mb-5" alt="Websearch">
+=======
+              <img src="assets/photos/lavarropa3.png" class="img-fluid  mb-5" alt="Websearch">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
             </div>
 
             <div class="card-title mb-4 text-center fs-2">Lavarropa Drean</div>
-            
+
             <div class="text-center mt-auto mb-4">
               <h5 class="text-vendido">Lavarropas carga frontal 8 kg</h5>
               <h3 class="precio-vendido">$180000</h3>
             </div>
+<<<<<<< HEAD
             <div class="text-center"><button type="button" class="btn btncolor"><img src="../Assets/photos/carro.png" style="width:2rem">Comprar</button></div>
+=======
+            <div class="text-center"><button type="button" class="btn btncolor"><img src="assets/photos/carro.png" style="width:2rem">Comprar</button></div>
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
 
           </div>
         </div>
@@ -397,18 +483,26 @@
         <div class="card1 py-6 px-lg-8 h-100">
           <div class="card-body d-flex flex-column">
             <div class="text-center">
+<<<<<<< HEAD
               <img src="../Assets/photos/tv3.png" class="img-fluid  mb-6" alt="Websearch">
+=======
+              <img src="assets/photos/tv3.png" class="img-fluid  mb-6" alt="Websearch">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
             </div>
             <br>
             <br>
 
             <div class="card-title mb-4 text-center fs-2">Tv Smart</div>
-            
+
             <div class="text-center mt-auto mb-4">
              <h5 class="text-vendido">Lavarropas carga frontal 8 kg</h5>
               <h3 class="precio-vendido">$180000</h3>
             </div>
+<<<<<<< HEAD
             <div class="text-center"><button type="button" class="btn btncolor"><img src="../Assets/photos/carro.png" style="width:2rem">Comprar</button></div>
+=======
+            <div class="text-center"><button type="button" class="btn btncolor"><img src="assets/photos/carro.png" style="width:2rem">Comprar</button></div>
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
 
           </div>
         </div>
@@ -421,18 +515,26 @@
         <div class="card1 py-6 px-lg-8 h-100">
           <div class="card-body d-flex flex-column">
             <div class="text-center">
+<<<<<<< HEAD
               <img src="../Assets/photos/tv3.png" class="img-fluid  mb-6" alt="Websearch">
+=======
+              <img src="assets/photos/tv3.png" class="img-fluid  mb-6" alt="Websearch">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
             </div>
             <br>
             <br>
 
             <div class="card-title mb-4 text-center fs-2">Tv Smart</div>
-            
+
             <div class="text-center mt-auto mb-4">
              <h5 class="text-vendido">Lavarropas carga frontal 8 kg</h5>
               <h3 class="precio-vendido">$180000</h3>
             </div>
+<<<<<<< HEAD
             <div class="text-center"><button type="button" class="btn btncolor"><img src="../Assets/photos/carro.png" style="width:2rem">Comprar</button></div>
+=======
+            <div class="text-center"><button type="button" class="btn btncolor"><img src="assets/photos/carro.png" style="width:2rem">Comprar</button></div>
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
 
           </div>
         </div>
@@ -444,16 +546,24 @@
         <div class="card1 py-6 px-lg-8 h-100">
           <div class="card-body d-flex flex-column">
             <div class="text-center">
+<<<<<<< HEAD
               <img src="../Assets/photos/video.png" class="img-fluid  mb-5" alt="Websearch">
+=======
+              <img src="assets/photos/video.png" class="img-fluid  mb-5" alt="Websearch">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
             </div>
 
             <div class="card-title mb-4 text-center fs-2">Play station</div>
-            
+
             <div class="text-center mt-auto mb-4">
               <h5 class="text-vendido">Lavarropas carga frontal 8 kg</h5>
               <h3 class="precio-vendido">$180000</h3>
             </div>
+<<<<<<< HEAD
             <div class="text-center"><button type="button" class="btn btncolor"><img src="../Assets/photos/carro.png"style="width:2rem" >Comprar</button></div>
+=======
+            <div class="text-center"><button type="button" class="btn btncolor"><img src="assets/photos/carro.png"style="width:2rem" >Comprar</button></div>
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
 
           </div>
         </div>
@@ -462,7 +572,7 @@
 
     </div>
 </div>
-  
+
 </section>
 
 
@@ -477,11 +587,12 @@
     <div class="me-5 d-none d-lg-block">
       <span>Seguinos en nuestras redes sociales</span>
     </div>
-    
+
 
     <!-- icon social media -->
     <div>
       <a href="" class="me-4 link-secondary">
+<<<<<<< HEAD
         <img src="../Assets/photos/facebook.png" width="30px">
         
       </a>
@@ -496,12 +607,28 @@
       </a>
       <a href="" class="me-4 link-secondary">
         <img src="../Assets/photos/linkedin.png" width="30px">
+=======
+        <img src="assets/photos/facebook.png" width="30px">
+
       </a>
-        
+      <a href="" class="me-4 link-secondary">
+        <img src="assets/photos/twitter.png" width="30px">
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <img src="assets/photos/youtube.png" width="30px">
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <img src="assets/photos/instagram.png" width="30px">
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <img src="assets/photos/linkedin.png" width="30px">
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
+      </a>
+
     </div>
-    
+
   </section>
-  
+
 
   <!-- Seccion Links  -->
   <section class="">
@@ -512,11 +639,15 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4" style="font-size: 25px;">
+<<<<<<< HEAD
             <a href=""><img src="../Assets/photos/logo4.png" width="90px"></a>Maxihome
+=======
+            <a href=""><img src="assets/photos/logo4.png" width="90px"></a>Maxihome
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
           </h6>
-          
+
         </div>
-        
+
 
         <!-- Grid columna 1-->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -537,7 +668,7 @@
             <a href="#!" class="text-reset">Tv / Audio</a>
           </p>
         </div>
-        
+
 
         <!-- Grid columna 2-->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -558,12 +689,13 @@
             <a href="#!" class="text-reset">Mas vendido</a>
           </p>
         </div>
-        
+
 
         <!-- Grid columna 3 -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+<<<<<<< HEAD
           <p><img src="../Assets/photos/home.png" style="width:35px"> Gral Paz 689</p>
           <p>
             <img src="../Assets/photos/sobre.png" style="width:35px">
@@ -572,13 +704,23 @@
           <p><img src="../Assets/photos/phone.png" style="width:35px">3814354690</p>
           <p><a class="nosotros" href=""><img src="../Assets/photos/nosotros.png" style="width:35px">  Sobre nosotros</a></p>
          
+=======
+          <p><img src="assets/photos/home.png" style="width:35px"> Gral Paz 689</p>
+          <p>
+            <img src="assets/photos/sobre.png" style="width:35px">
+            info@example.com
+          </p>
+          <p><img src="assets/photos/phone.png" style="width:35px">3814354690</p>
+          <p><a class="nosotros" href=""><img src="assets/photos/nosotros.png" style="width:35px">  Sobre nosotros</a></p>
+
+>>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
         </div>
         <!-- Grid column -->
       </div>
       <!-- Grid row -->
     </div>
   </section>
-  
+
 
   <!-- Copyright -->
   <div class="text-center p-4 " style="color:white;">
@@ -590,5 +732,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="js/searchFunction.js"></script>
 </body>
 </html>

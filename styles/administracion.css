@@ -3,66 +3,6 @@
     
 }
 
-/* NAVBAR */
-
-.navbar{
-
-
-    border-bottom: 1px solid transparent;
-      box-shadow: 3px 9px 15px 0 rgba(2,0,0, .2);
-    }
-    .nav-item .nav-link{
-      font-family:'Poppins', sans-serif;
-      font-size: 20px;
-      color: white;
-      font-weight: 400;
-    }
-    .nav-item a:hover{
-      color: #C651CD;
-    }
-    
-    .nav-item .dropdown-item:hover{
-      color: #8739F9;
-      background-color: #dcdcdc;
-    
-    }
-    
-    .navbar-nav  .nav-item  .active{
-      color: white;
-    }
-    
-    .navbar-nav img{
-      width: 90px;
-      height: 30px;
-      }
-    .btn-cart{
-      border-radius: 20px;
-      border-color: #C651CD;
-      font-family:'Poppins', sans-serif; 
-    
-    }
-    
-    .btn-cart:hover{
-      background-color: #8739F9;
-    }
-    
-    .navbar-nav .nav-item{
-      color: white;
-      font-family:'Poppins', sans-serif; 
-      font-size: 18px;
-      font-weight: 400;
-    }
-    
-    .navbar-nav .nav-item:hover{
-      color: #C651CD;;
-    
-    }
-
-    /* TABLA DE PRODUCTOS */
-
-   /*  #tableob{
-        margin-top: 220px;
-    } */
 
     /*TITULO H1*/
 
