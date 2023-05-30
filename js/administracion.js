@@ -242,14 +242,21 @@ function guardarProductosEnLocalStorage() {
   let productsJSON = JSON.stringify(products);
   localStorage.setItem("products", productsJSON);
 }
-
 // Obtener los usuarios almacenados en el localStorage
 let usersJSON = localStorage.getItem("users");
-let users = [];
 
 if (usersJSON) {
   // Convertir la cadena JSON a un array de objetos
   users = JSON.parse(usersJSON);
+} else {
+  users = [
+    {
+      email: "admin@admin.com",
+      password: "Admin1234",
+      username: "admin",
+    },
+  ];
+  saveUsersToLocalStorage();
 }
 
 // Llamar a la función para renderizar los usuarios
@@ -266,9 +273,16 @@ function renderUsers() {
       <td>${user.username}</td>
       <td>${user.email}</td>
       <td>${user.password}</td>
+      <td><img src="${
+        user.avatar || "default-avatar.png"
+      }" alt="Avatar" class="avatar"></td>
       <td>
-        <button type="button" class="btn btn-warning editar" data-email="${user.email}">Editar</button>
-        <button type="button" class="btn btn-danger eliminar" data-email="${user.email}">Eliminar</button>
+        <button type="button" class="btn btn-warning editar" data-email="${
+          user.email
+        }">Editar</button>
+        <button type="button" class="btn btn-danger eliminar" data-email="${
+          user.email
+        }">Eliminar</button>
       </td>
     `;
 
@@ -338,11 +352,20 @@ userForm.addEventListener("submit", function (event) {
   let username = document.getElementById("inputUsername").value;
   let email = document.getElementById("inputEmail").value;
   let password = document.getElementById("inputPassword").value;
+  let avatar = document.getElementById("inputAvatar").files[0];
+  let avatarURL = "";
+
+  if (avatar) {
+    // Cargar la imagen al servidor o almacenarla de alguna manera y obtener su URL
+    // Aquí puedes implementar la lógica para cargar la imagen al servidor
+    avatarURL = "../assets/photos/" + avatar.name;
+  }
 
   let newUser = {
     username: username,
     email: email,
     password: password,
+    avatar: avatarURL,
   };
 
   users.push(newUser);

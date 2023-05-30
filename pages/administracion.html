@@ -130,6 +130,7 @@
             <th scope="col">Nombre de Usuario</th>
             <th scope="col">Correo Electrónico</th>
             <th scope="col">Contraseña</th>
+            <th scope="col">Avatar</th>
             <th scope="col">Acciones</th>
           </tr>
         </thead>
@@ -158,6 +159,15 @@
           required
         />
       </div>
+      <div>
+        <label for="inputAvatar" class="form-label">Avatar:</label>
+        <input
+          type="file"
+          class="form-control"
+          id="inputAvatar"
+          accept="image/*"
+        />
+      </div>
       <button type="submit" class="btn btn-success">Guardar</button>
     </form>
     <div class="text-center">
@@ -165,6 +175,7 @@
         Agregar Usuario
       </button>
     </div>
+
     <script src="/js/administracion.js"></script>
   </body>
 </html>
