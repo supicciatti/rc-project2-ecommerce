@@ -1,136 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!------BOOTSTRAP------>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
     <!-------FUENTES DE GOOGLE VÍA LINK-------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <!--------CSS------->
-    <link rel="stylesheet" href="/styles/administracion.css">
+    <link rel="stylesheet" href="/styles/administracion.css" />
     <!-------FAVICON------>
-<<<<<<< HEAD
-    <link rel="icon" type="image/-xicon" href="/Assets/favicon.png">
-=======
-    <link rel="icon" type="image/-xicon" href="/assets/photos/favicon.png">
->>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/-xicon" href="/assets/photos/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <!-------TITULO----->
     <title>Página de administracion</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div>
-        <div class="mb-3">
-            <h1 class="titulo text-center">Productos cargados</h1>
+      <div class="mb-3">
+        <h1 class="titulo text-center">Productos cargados</h1>
+      </div>
+
+      <!------------TABLA DE PRODUCTOS----------->
+      <div class="container">
+        <table class="table table-dark table-hover text-center">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Código</th>
+              <th scope="col">Imagen</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Precio de venta</th>
+              <th scope="col">Unidades</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="container mt-5">
+          <div id="divFormulario">
+            <h2 class="titulo text-center">Agregar Producto</h2>
+            <form id="formulario">
+              <div class="mb-3">
+                <label for="inputCodigo" class="form-label">Código</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputCodigo"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputImagen" class="form-label">Imagen</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="inputImagen"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputNombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputNombre"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputPrecioVenta" class="form-label"
+                  >Precio de venta</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputPrecioVenta"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputUnidades" class="form-label">Unidades</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputUnidades"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Agregar</button>
+            </form>
+          </div>
         </div>
 
-        <!------------TABLA DE PRODUCTOS----------->
-        <div class="container">
-            <table class="table table-dark table-hover text-center">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Código</th>
-                        <th scope="col">Imagen</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Precio de venta</th>
-                        <th scope="col">Unidades</th>
-                        <th scope="col">Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-<<<<<<< HEAD
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>001</td>
-                    <td><img src="/Assets/tv1-removebg-preview.png" alt="Smart tv Samsung"></td>
-                    <td>Smart TV 4K UHD Samsung 65"</td>
-                    <td>$259.999</td>
-                    <td>13</td>
-                    <td>
-                        <button type="button" class="btn btn-warning">Editar</button>
-                        <button type="button" class="btn btn-danger">Eliminar</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>002</td>
-                    <td><img src="/Assets/aire1-removebg-preview.png" alt="Aire acondicionado"></td>
-                    <td>Aire Acondicionado Samsung Split Inverter Frío/calor</td>
-                    <td>$400.679</td>
-                    <td>8</td>
-                    <td>
-                        <button type="button" class="btn btn-warning">Editar</button>
-                        <button type="button" class="btn btn-danger">Eliminar</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>003</td>
-                    <td><img src="/Assets/celu1-removebg-preview.png" alt="Celular Motorola 5G"></td>
-                    <td>Smartphone Moto E7i Power 32 GB azul 2 GB RAM</td>
-                    <td>$65.999</td>
-                    <td>22</td>
-                    <td>
-                        <button type="button" class="btn btn-warning">Editar</button>
-                        <button type="button" class="btn btn-danger">Eliminar</button>
-                    </td>
-                  </tr>
-=======
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>001</td>
-                        <td><img src="/assets/photos/tv1-removebg-preview.png" alt="Smart tv Samsung"></td>
-                        <td>Smart TV 4K UHD Samsung 65"</td>
-                        <td>$259.999</td>
-                        <td>13</td>
-                        <td>
-                            <button type="button" class="btn btn-warning">Editar</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>002</td>
-                        <td><img src="/assets/photos/aire1-removebg-preview.png" alt="Aire acondicionado"></td>
-                        <td>Aire Acondicionado Samsung Split Inverter Frío/calor</td>
-                        <td>$400.679</td>
-                        <td>8</td>
-                        <td>
-                            <button type="button" class="btn btn-warning">Editar</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>003</td>
-                        <td><img src="/assets/photos/celu1-removebg-preview.png" alt="Celular Motorola 5G"></td>
-                        <td>Smartphone Moto E7i Power 32 GB azul 2 GB RAM</td>
-                        <td>$65.999</td>
-                        <td>22</td>
-                        <td>
-                            <button type="button" class="btn btn-warning">Editar</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
-                        </td>
-                    </tr>
->>>>>>> 2c2871d6b48aeeec13acbc00aff2ae4e27c22a7c
-                </tbody>
-            </table>
-            <div class="text-center">
-                <button type="button" class="btn btn-success container col-4">Agregar pruducto</button>
-            </div>
+        <div class="text-center">
+          <button
+            id="botonAgregarProducto"
+            type="button"
+            class="btn btn-success container col-4"
+            data-toggle="modal"
+            data-target="#formulario"
+          >
+            Agregar producto
+          </button>
         </div>
-
+      </div>
     </div>
 
-</body>
-
+    <script src="/js/administracion.js"></script>
+  </body>
 </html>

@@ -1,19 +1,17 @@
 * {
-    background-color: #363636;
-    
+  background-color: white;
 }
 
+/*TITULO H1*/
 
-    /*TITULO H1*/
+.titulo {
+  color: white;
+  margin-top: 3rem;
+  background-image: linear-gradient(to right, #c651cd, #8739f9);
+}
 
-    .titulo{
-        color: white;
-        margin-top: 3rem;
-        background-image: linear-gradient(to right, #C651CD  , #8739F9);
-       }
+/* IMAGENES DE TABLA */
 
-    /* IMAGENES DE TABLA */
-
-    img{
-        width: 13rem;
-    }
+img {
+  width: 13rem;
+}

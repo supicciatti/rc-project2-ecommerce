@@ -75,33 +75,53 @@ border-bottom: 1px solid transparent;
   -webkit-background-clip: text;
 }
 
-/*IMAGENES DE BANCOS*/
+/
 
- .galeria{
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  margin-top: 3rem;
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  cursor: pointer;
+   transition: transform .5s;
 }
 
-.galeria img{
-  max-width: 400px;
-  padding: 1rem;
+.column:hover{
+ 
+   
+  transform: scale(1.1); 
 }
 
-.galeria .cuotas{
-  color: white;
+
+
 
 }
 
-.galeria .interes{
-  color: white;
-  margin-left: 1rem;
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+Clear floats after the columns 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.galeria .condiciones{
-  color:#C651CD ;
-  margin-left: 1rem;
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
 }
 
 
@@ -170,4 +190,3 @@ border-bottom: 1px solid transparent;
   color: white;
   font-size: 17px;
  }
-
