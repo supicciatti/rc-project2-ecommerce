@@ -1,143 +1,171 @@
 /*NAVBAR*/
 
-.navbar {
+.navbar{
   border-bottom: 1px solid transparent;
-  box-shadow: 3px 9px 15px 0 rgba(2, 0, 0, 0.2);
+ box-shadow: 3px 9px 15px 0 rgba(2,0,0, .2);
 }
-.nav-item .nav-link {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: white;
-  font-weight: 400;
+.nav-item .nav-link{
+ font-family:'Poppins', sans-serif;
+ font-size: 20px;
+ color: white;
+ font-weight: 400;
 }
-.nav-item a:hover {
-  color: #c651cd;
-}
-.nav-item .dropdown-item:hover {
-  color: #8739f9;
-  background-color: #dcdcdc;
-}
-.navbar-nav .nav-item .active {
-  color: white;
-}
-.navbar-nav img {
-  width: 90px;
-  height: 30px;
-}
-.btn-cart {
-  border-radius: 20px;
-  border-color: #c651cd;
-  font-family: "Poppins", sans-serif;
-}
-.btn-cart:hover {
-  background-color: #8739f9;
-}
-.navbar-nav .nav-item {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-}
-.navbar-nav .nav-item:hover {
-  color: #c651cd;
+.nav-item a:hover{
+ color: #C651CD;
 }
 
-/* CARDS SAMSUNG */
 
-.text-center .samgung {
-  margin-top: 10rem;
+
+
+
+.nav-item .dropdown-item:hover{
+ color: #8739F9;
+ background-color: #dcdcdc;
+
 }
-.card {
-  background: #242424;
-  border-style: 1px solid white;
+
+.navbar-nav  .nav-item  .active{
+ color: white;
 }
-.text-center strong {
-  background: linear-gradient(to right, #c651cd, #8739f9);
-  font-size: 48px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+
+.navbar-nav img{
+ width: 90px;
+ height: 30px;
+ }
+.btn-cart{
+ border-radius: 20px;
+ border-color: #C651CD;
+ font-family:'Poppins', sans-serif; 
+
 }
-.bg-image {
-  height: 300px;
-  overflow: hidden;
+
+.btn-cart:hover{
+ background-color: #8739F9;
 }
-.bg-image img {
-  transition: transform 0.5s ease;
+
+.navbar-nav .nav-item{
+ color: white;
+ font-family:'Poppins', sans-serif; 
+ font-size: 18px;
+ font-weight: 400;
 }
-.bg-image img:hover {
-  transform: scale(1.1);
+
+.navbar-nav .nav-item:hover{
+ color: #C651CD;;
+
 }
-.text-reset p {
-  color: #8739f9;
+
+/* CARDS Smart Tv */
+
+.card{
+ background: #242424;
+ border-style: 1px solid white;
 }
-.bg-image .card-title {
+
+.card img{
+ transition: transform .5s;
+}
+
+.card img:hover{
+ transform: scale(0.9);
+}
+
+.titulo{
+ color: white;
+ margin-top: 10rem;
+ background-image: linear-gradient(to right, #C651CD  , #8739F9);
+}
+
+.mb-0{
+   color: #C651CD;
+  display:flex;
+   align-content: center;
+   justify-content: center;
+}
+
+.small{
+ color: white;
+ display:flex;
+   align-content: center;
+   justify-content: center;
+ 
+}
+
+.btn-comprar{
+  text-decoration: none;
+  background-color:#C651CD ;
+  border-radius: 15px;
   color: white;
 }
-.card-body .card-title {
-  color: #c651cd;
+
+.btn-comprar:hover{
+  background-color:#8739F9 ;
 }
-.card-body .btn {
-  border-color: #c651cd;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
-.card-body .btn:hover {
-  background-color: #c651cd;
-  color: #100f10;
-}
+
+
 
 /* FOOTER */
-
-footer {
-  margin-top: 10rem;
-}
+ footer{
+   margin-top: 10rem;
+ }
 .col-md-2 p {
-  color: #c651cd;
+ color:#C651CD ;
+ 
 }
-.col-md-2 p:hover {
-  color: white;
-}
-.me-5 span {
-  color: white;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
-.col-md-2 h6 {
-  color: white;
+.col-md-2 p:hover{
+ color: white;
 }
 
-.col-md-3 p {
-  color: #c651cd;
-}
-.col-md-3 p:hover {
-  color: white;
-  right: 15px;
+.me-5 span{
+ color: white;
+ font-weight: 600;
+ font-family: 'Poppins',sans-serif;
 }
 
-.col-md-3 h6 {
+.col-md-2 h6{
+ color: white;
+}
+
+.col-md-3 p{
+ color: #C651CD;
+}
+.col-md-3 p:hover{
   color: white;
+ right: 15px;
 }
-.col-md-4 p {
-  color: #c651cd;
+
+.col-md-3 h6{
+ color: white;
+
 }
-.col-md-4 h6 {
-  color: white;
+
+
+.col-md-4 p{
+ color: #C651CD;
 }
-.col-md-4 p i {
-  color: #c651cd;
+
+.col-md-4 h6{
+ color: white;
 }
-.text-center .text-reset {
-  color: #c651cd;
+
+.col-md-4 p i{
+ color: #C651CD;
 }
-.me-4 img {
-  transition: transform 0.2s;
+
+.text-center .text-reset{
+ color:#C651CD ;
 }
-.me-4 img:hover {
-  transform: scale(1.5);
+
+.me-4 img{
+  transition: transform .2s;
 }
-.col-md-4 a {
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
+
+.me-4 img:hover{
+ transform: scale(1.5); 
+}
+
+.col-md-4 a{
+ text-decoration: none;
+ color: white;
+ font-size: 17px;
 }
