@@ -18,6 +18,7 @@
   </head>
 
   <body>
+    
     <!-- Navbar -->
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
@@ -46,9 +47,9 @@
                 >Celulares</a
               >
               <div class="dropdown-menu">
-                <a href="#" class="dropdown-item">Celulares Samsung</a>
-                <a href="#" class="dropdown-item">Celulares Motorola</a>
-                <a href="#" class="dropdown-item">Celulares Apple</a>
+                <a href="/pages/samsungcelu.html" target="_blank" class="dropdown-item">Celulares Samsung</a>
+                <a href="/pages/motorola.html" target="_blank" class="dropdown-item">Celulares Motorola</a>
+                <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Celulares Apple</a>
               </div>
             </div>
             <div class="nav-item dropdown">
@@ -59,10 +60,10 @@
                 >Tecnologia</a
               >
               <div class="dropdown-menu">
-                <a href="#" class="dropdown-item">Notebooks</a>
-                <a href="#" class="dropdown-item">Tablets</a>
-                <a href="#" class="dropdown-item">Monitores</a>
-                <a href="#" class="dropdown-item">Videos juegos</a>
+                <a href="/pages/notebook.html" target="_blank" class="dropdown-item">Notebooks</a>
+                <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Tablets</a>
+                <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Monitores</a>
+                <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Videos juegos</a>
               </div>
             </div>
             <div class="nav-item dropdown">
@@ -73,10 +74,10 @@
                 >Electrodomesticos</a
               >
               <div class="dropdown-menu">
-                <a href="#" class="dropdown-item">Heladeras</a>
-                <a href="#" class="dropdown-item">Freezers</a>
-                <a href="#" class="dropdown-item">Lavarropas</a>
-                <a href="#" class="dropdown-item">Aires</a>
+                <a href="/pages/heladera.html" target="_blank" class="dropdown-item">Heladeras</a>
+                <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Freezers</a>
+                <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Lavarropas</a>
+                <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Aires</a>
               </div>
             </div>
             <div class="nav-item dropdown">
@@ -87,8 +88,8 @@
                 >Tv/Audio</a
               >
               <div class="dropdown-menu">
-                <a href="#" class="dropdown-item">Smart Tv</a>
-                <a href="#" class="dropdown-item">Parlantes portatiles</a>
+                <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Smart Tv</a>
+                <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Parlantes portatiles</a>
               </div>
             </div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -96,7 +97,8 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="#"
+                  href="/pages/sobreNosotros.html"
+                  target="_blank"
                   style="color: white"
                   >Nosotros</a
                 >
@@ -105,26 +107,10 @@
           </div>
           <form class="d-flex">
             <div class="input-group">
-              <input
-                id="searchInput"
-                type="text"
-                class="form-control"
-                placeholder="Buscar..."
-              />
-              <button type="button" class="btn btn-secondary">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                  />
-                </svg>
-              </button>
+              <input id="searchInput" type="text" class="form-control" placeholder="Buscar...">
+              <button type="button" class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></i></button>
               <ul id="suggestions" class="list-group"></ul>
             </div>
           </form>
@@ -133,12 +119,13 @@
               ><button class="btn-cart">
                 <img src="/assets/photos/cart-red.svg" /></button
             ></a>
-            <a href="#" class="nav-item nav-link">Ingresá</a>
-            <a href="#" class="nav-item nav-link">Crear cuenta</a>
+            <a href="/pages/login.html" target="_blank" class="nav-item nav-link">Ingresá</a>
+            <a href="/pages/registrarse.html" target="_blank" class="nav-item nav-link">Crear cuenta</a>
           </div>
         </div>
       </div>
     </nav>
+
 
     <!-- CARDS CELULARES SAMSUNG -->
 
@@ -297,125 +284,130 @@
       </div>
     </section>
 
-    <!-- Footer -->
+   <!-- Footer -->
 
-    <footer class="text-center text-lg-start bg-dark text-muted mt-0">
-      <!-- Seccion Social media -->
-      <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-      >
-        <!-- Izquierda -->
-        <div class="me-5 d-none d-lg-block">
-          <span>Seguinos en nuestras redes sociales</span>
-        </div>
-        <!-- icon social media -->
-        <div>
-          <a href="" class="me-4 link-secondary">
-            <img src="/assets/photos/facebook.png" width="30px" />
-          </a>
-          <a href="" class="me-4 link-secondary">
-            <img src="/assets/photos/twitter.png" width="30px" />
-          </a>
-          <a href="" class="me-4 link-secondary">
-            <img src="/assets/photos/youtube.png" width="30px" />
-          </a>
-          <a href="" class="me-4 link-secondary">
-            <img src="/assets/photos/instagram.png" width="30px" />
-          </a>
-          <a href="" class="me-4 link-secondary">
-            <img src="/assets/photos/linkedin.png" width="30px" />
-          </a>
-        </div>
-      </section>
+   <footer class="text-center text-lg-start bg-dark text-muted">
+    <!-- Seccion Social media -->
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <!-- Izquierda -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Seguinos en nuestras redes sociales</span>
+      </div>
 
-      <!-- Seccion Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid columna -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4" style="font-size: 25px">
-                <a href=""
-                  ><img src="/assets/photos/logo4.png" width="90px" /></a
-                >Maxihome
-              </h6>
-            </div>
+      <!-- icon social media -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <img src="/assets/photos/facebook.png" width="30px" />
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <img src="/assets/photos/twitter.png" width="30px" />
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <img src="/assets/photos/youtube.png" width="30px" />
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <img src="/assets/photos/instagram.png" width="30px" />
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <img src="/assets/photos/linkedin.png" width="30px" />
+        </a>
+      </div>
+    </section>
 
-            <!-- Grid columna 1-->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
-              <p>
-                <a href="#!" class="text-reset">Celulares</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Tecnología</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Electrodomesticos</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Tv / Audio</a>
-              </p>
-            </div>
+    <!-- Seccion Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid columna -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4" style="font-size: 25px">
+              <a href="#"
+                ><img src="/assets/photos/logo4.png" width="90px" /></a
+              >Maxihome
+            </h6>
+          </div>
 
-            <!-- Grid columna 2-->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Recomendados</h6>
-              <p>
-                <a href="#!" class="text-reset">Smart TV</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Celulares</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Aire acondicionado</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Mas vendido</a>
-              </p>
-            </div>
+          <!-- Grid columna 1-->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
+            <p>
+              <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Celulares</a>
+            </p>
+            <p>
+              <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Tecnología</a>
+            </p>
+            <p>
+              <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Electrodomesticos</a>
+            </p>
+            <p>
+              <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Tv / Audio</a>
+            </p>
+          </div>
 
-            <!-- Grid columna 3 -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-              <p>
-                <img src="/assets/photos/home.png" style="width: 35px" /> Gral
-                Paz 689
-              </p>
-              <p>
-                <img src="/assets/photos/sobre.png" style="width: 35px" />
-                info@example.com
-              </p>
-              <p>
-                <img
-                  src="/assets/photos/phone.png"
+          <!-- Grid columna 2-->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Recomendados</h6>
+            <p>
+              <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Smart TV</a>
+            </p>
+            <p>
+              <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Celulares</a>
+            </p>
+            <p>
+              <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Aire acondicionado</a>
+            </p>
+            <p>
+              <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Mas vendido</a>
+            </p>
+          </div>
+
+          <!-- Grid columna 3 -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+            <p>
+              <img src="/assets/photos/home.png" style="width: 35px" /> Gral
+              Paz 689
+            </p>
+            <p>
+              <img src="/assets/photos/sobre.png" style="width: 35px" />
+              info@example.com
+            </p>
+            <p>
+              <img
+                src="/assets/photos/phone.png"
+                style="width: 35px"
+              />3814354690
+            </p>
+            <p>
+              <a class="nosotros" href=""
+                ><img
+                  src="/assets/photos/nosotros.png"
                   style="width: 35px"
-                />3814354690
-              </p>
-              <p>
-                <a class="nosotros" href=""
-                  ><img src="/assets/photos/nosotros.png" style="width: 35px" />
-                  Sobre nosotros</a
-                >
-              </p>
-            </div>
+                />
+                Sobre nosotros</a
+              >
+            </p>
           </div>
         </div>
-      </section>
-
-      <!-- Copyright -->
-      <div class="text-center p-4" style="color: white">
-        © 2023 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-          >Todos los derechos reservados Maxihome.com</a
-        >
       </div>
-    </footer>
+    </section>
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="color: white">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+        >Todos los derechos reservados Maxihome.com</a
+      >
+    </div>
+  </footer>
+</section>
 
     <!-- LINK BOOSTRAP 5 -->
     <script
