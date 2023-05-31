@@ -1,348 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Link Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../styles/registrarseStyles.css" />
-  <title>Registrarse</title>
-</head>
-<body>
-  <!-- Navbar -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/registrarseStyles.css" />
+    <title>Registrarse</title>
+  </head>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
-    <div class="container-fluid">
-      <a href="/index.html"
-        ><img src="/assets/photos/logo4.png" width="90px"
-      /></a>
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse justify-content-between"
-        id="navbarCollapse"
-      >
-        <div class="navbar-nav">
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Celulares</a
-            >
-            <div class="dropdown-menu">
-              <a href="/pages/samsungcelu.html" target="_blank" class="dropdown-item">Celulares Samsung</a>
-              <a href="/pages/motorola.html" target="_blank" class="dropdown-item">Celulares Motorola</a>
-              <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Celulares Apple</a>
-            </div>
-          </div>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Tecnologia</a
-            >
-            <div class="dropdown-menu">
-              <a href="/pages/notebook.html" target="_blank" class="dropdown-item">Notebooks</a>
-              <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Tablets</a>
-              <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Monitores</a>
-              <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Videos juegos</a>
-            </div>
-          </div>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Electrodomesticos</a
-            >
-            <div class="dropdown-menu">
-              <a href="/pages/heladera.html" target="_blank" class="dropdown-item">Heladeras</a>
-              <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Freezers</a>
-              <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Lavarropas</a>
-              <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Aires</a>
-            </div>
-          </div>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Tv/Audio</a
-            >
-            <div class="dropdown-menu">
-              <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Smart Tv</a>
-              <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Parlantes portatiles</a>
-            </div>
-          </div>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a href="/index.html"
+          ><img src="/assets/photos/logo4.png" width="90px"
+        /></a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav">
+            <div class="nav-item dropdown">
               <a
-                class="nav-link active"
-                aria-current="page"
-                href="/pages/sobreNosotros.html"
-                target="_blank"
-                style="color: white"
-                >Nosotros</a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Celulares</a
               >
-            </li>
-          </ul>
-        </div>
-        <form class="d-flex">
-          <div class="input-group">
-            <input id="searchInput" type="text" class="form-control" placeholder="Buscar...">
-            <button type="button" class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg></i></button>
-            <ul id="suggestions" class="list-group"></ul>
+              <div class="dropdown-menu">
+                <a href="/pages/samsungcelu.html" class="dropdown-item"
+                  >Celulares Samsung</a
+                >
+                <a href="/pages/motorola.html" class="dropdown-item"
+                  >Celulares Motorola</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Celulares Apple</a
+                >
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Tecnologia</a
+              >
+              <div class="dropdown-menu">
+                <a href="/pages/notebook.html" class="dropdown-item"
+                  >Notebooks</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Tablets</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Monitores</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Videos juegos</a
+                >
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Electrodomesticos</a
+              >
+              <div class="dropdown-menu">
+                <a href="/pages/heladera.html" class="dropdown-item"
+                  >Heladeras</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Freezers</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Lavarropas</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Aires</a
+                >
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Tv/Audio</a
+              >
+              <div class="dropdown-menu">
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Smart Tv</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Parlantes portatiles</a
+                >
+              </div>
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/pages/sobreNosotros.html"
+                  style="color: white"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
           </div>
-        </form>
-        <div class="navbar-nav">
-          <a href="#"
-            ><button class="btn-cart">
-              <img src="/assets/photos/cart-red.svg" /></button
-          ></a>
-          <a href="/pages/login.html" target="_blank" class="nav-item nav-link">Ingresá</a>
-          <a href="/pages/registrarse.html" target="_blank" class="nav-item nav-link">Crear cuenta</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- Caja que contiene todo el documento -->
-  <div class="d-flex mt-5 mt-lg-0">
-    <!-- Caja izquierda, que contiene y muestra la imagen desde tamaño lg -->
-    <div class="d-none d-lg-block col-lg container-fluid p-0">
-      <img class="w-100 h-100" src="../assets/photos/registerImage.jpg" alt="imagen registro" />
-    </div>
-    <!-- Caja derecha, contiene el formulario de registro -->
-    <div class="col-lg my-auto mx-auto">
-      <!-- Caja que le da el tamaño al formulario -->
-      <div class="mainBox">
-        <!-- Con la caja de class p-4 logramos un padding mayor entre el los input y los bordes del formulario -->
-        <div class="p-4">
-          <!-- Contiene el texto del formulario -->
-          <div>
-            <h2 class="text-center py-4">Registrate</h2>
-            <h5 class="text-center py-1 colorTextoH5">
-              Completá los siguientes campos con tu información:
-            </h5>
-          </div>
-          <!-- Formulario -->
-          <form class="p-3 needs-validation" novalidate id="registration-form">
-            <div class="mb-3">
-              <label for="nombreYApellido" class="form-label colorTextoH5">Nombre y apellido</label>
-              <input placeholder="Juan Perez" type="text" class="form-control inputColor" id="nombreYApellido" pattern="^\S+\s+\S+$" title="Ingrese al menos dos palabras separadas por un espacio en blanco" required />
-              <div class="valid-feedback">¡Perfecto!</div>
-              <div class="invalid-feedback">Ingresá tu nombre y apellido separados por un espacio.</div>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label colorTextoH5">Email</label>
-              <input type="email" class="form-control inputColor" id="email" placeholder="correo@email.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required />
-              <div class="valid-feedback">¡Perfecto!</div>
-              <div class="invalid-feedback">Ingresá un correo electrónico válido.</div>
-            </div>
-            <div class="mb-3">
-              <label for="imputNuevaClave" class="form-label colorTextoH5">Contraseña</label>
-              <input type="password" class="form-control inputColor" id="imputNuevaClave" placeholder="**********" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required />
-              <div class="valid-feedback">¡Perfecto!</div>
-              <div class="invalid-feedback">
-                Ingrese una clave que tenga:
-                <br />
-                *Al menos 8 caracteres.
-                <br />
-                *Al menos una letra mayúscula y una letra minúscula
-                <br />
-                *Al menos un número
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="fechaNacimiento" class="form-label colorTextoH5">Fecha de nacimiento</label>
-              <input type="date" class="form-control inputColor" id="fechaNacimiento" required/>
-              <div class="valid-feedback">¡Perfecto!</div>
-              <div class="invalid-feedback">
-                Debes completar este campo también.
-              </div>
-            </div>
-            <!-- Avatars -->
-            <div class="mb-3 text-center">
-              <label for="avatar" class="mb-3 colorTextoH5">Elegí tu avatar!</label>
-              <div id="avatar-options">
-                <div class="avatar-option">
-                  <input type="radio" name="avatar" id="avatar1" value="/assets/photos/crocodile.jpg" checked>
-                  <label for="avatar1">
-                    <img src="/assets/photos/crocodile.jpg" alt="Avatar 1">
-                  </label>
-                </div>
-                <div class="avatar-option">
-                  <input type="radio" name="avatar" id="avatar2" value="/assets/photos/cuteBear.jpg">
-                  <label for="avatar2">
-                    <img src="/assets/photos/cuteBear.jpg" alt="Avatar 2">
-                  </label>
-                </div>
-                <div class="avatar-option">
-                  <input type="radio" name="avatar" id="avatar3" value="/assets/photos/kitty.jpg">
-                  <label for="avatar3">
-                    <img src="/assets/photos/kitty.jpg" alt="Avatar 3">
-                  </label>
-                </div>
-                <div class="avatar-option">
-                  <input type="radio" name="avatar" id="avatar4" value="/assets/photos/doggy.jpg">
-                  <label for="avatar4">
-                    <img src="/assets/photos/doggy.jpg" alt="Avatar 4">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center">
-              <button type="submit" class="btn colorBotonRegistrarse my-2">Registrarse</button>
-            </div>
-            <div></div>
-            <div id="modalError"></div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
- <!-- Footer -->
-
- <footer class="text-center text-lg-start bg-dark text-muted mt-0">
-  <!-- Seccion Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-    <!-- Izquierda -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Seguinos en nuestras redes sociales</span>
-    </div>
-
-    <!-- icon social media -->
-    <div>
-      <a href="" class="me-4 link-secondary">
-        <img src="/assets/photos/facebook.png" width="30px" />
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <img src="/assets/photos/twitter.png" width="30px" />
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <img src="/assets/photos/youtube.png" width="30px" />
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <img src="/assets/photos/instagram.png" width="30px" />
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <img src="/assets/photos/linkedin.png" width="30px" />
-      </a>
-    </div>
-  </section>
-
-  <!-- Seccion Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid columna -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4" style="font-size: 25px">
-            <a href="#"
-              ><img src="/assets/photos/logo4.png" width="90px" /></a
-            >Maxihome
-          </h6>
-        </div>
-
-        <!-- Grid columna 1-->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Celulares</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Tecnología</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Electrodomesticos</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Tv / Audio</a>
-          </p>
-        </div>
-
-        <!-- Grid columna 2-->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Recomendados</h6>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Smart TV</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Celulares</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Aire acondicionado</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Mas vendido</a>
-          </p>
-        </div>
-
-        <!-- Grid columna 3 -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-          <p>
-            <img src="/assets/photos/home.png" style="width: 35px" /> Gral
-            Paz 689
-          </p>
-          <p>
-            <img src="/assets/photos/sobre.png" style="width: 35px" />
-            info@example.com
-          </p>
-          <p>
-            <img
-              src="/assets/photos/phone.png"
-              style="width: 35px"
-            />3814354690
-          </p>
-          <p>
-            <a class="nosotros" href=""
-              ><img
-                src="/assets/photos/nosotros.png"
-                style="width: 35px"
+          <form class="d-flex">
+            <div class="input-group">
+              <input
+                id="searchInput"
+                type="text"
+                class="form-control"
+                placeholder="Buscar..."
               />
-              Sobre nosotros</a
+              <button type="button" class="btn btn-secondary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+              <ul id="suggestions" class="list-group"></ul>
+            </div>
+          </form>
+          <div class="navbar-nav">
+            <a href="#"
+              ><button class="btn-cart">
+                <img src="/assets/photos/cart-red.svg" /></button
+            ></a>
+            <a href="/pages/login.html" class="nav-item nav-link">Ingresá</a>
+            <a href="/pages/registrarse.html" class="nav-item nav-link"
+              >Crear cuenta</a
             >
-          </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Caja que contiene todo el documento -->
+    <div class="d-flex mt-5 mt-lg-0">
+      <!-- Caja izquierda, que contiene y muestra la imagen desde tamaño lg -->
+      <div class="d-none d-lg-block col-lg container-fluid p-0">
+        <img
+          class="w-100 h-100"
+          src="../assets/photos/registerImage.jpg"
+          alt="imagen registro"
+        />
+      </div>
+      <!-- Caja derecha, contiene el formulario de registro -->
+      <div class="col-lg my-auto mx-auto">
+        <!-- Caja que le da el tamaño al formulario -->
+        <div class="mainBox">
+          <!-- Con la caja de class p-4 logramos un padding mayor entre el los input y los bordes del formulario -->
+          <div class="p-4">
+            <!-- Contiene el texto del formulario -->
+            <div>
+              <h2 class="text-center py-4">Registrate</h2>
+              <h5 class="text-center py-1 colorTextoH5">
+                Completá los siguientes campos con tu información:
+              </h5>
+            </div>
+            <!-- Formulario -->
+            <form
+              class="p-3 needs-validation"
+              novalidate
+              id="registration-form"
+            >
+              <div class="mb-3">
+                <label for="nombreYApellido" class="form-label colorTextoH5"
+                  >Nombre y apellido</label
+                >
+                <input
+                  placeholder="Juan Perez"
+                  type="text"
+                  class="form-control inputColor"
+                  id="nombreYApellido"
+                  pattern="^\S+\s+\S+$"
+                  title="Ingrese al menos dos palabras separadas por un espacio en blanco"
+                  required
+                />
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">
+                  Ingresá tu nombre y apellido separados por un espacio.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label colorTextoH5">Email</label>
+                <input
+                  type="email"
+                  class="form-control inputColor"
+                  id="email"
+                  placeholder="correo@email.com"
+                  pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                  required
+                />
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">
+                  Ingresá un correo electrónico válido.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="imputNuevaClave" class="form-label colorTextoH5"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control inputColor"
+                  id="imputNuevaClave"
+                  placeholder="**********"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+                  required
+                />
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">
+                  Ingrese una clave que tenga:
+                  <br />
+                  *Al menos 8 caracteres.
+                  <br />
+                  *Al menos una letra mayúscula y una letra minúscula
+                  <br />
+                  *Al menos un número
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="fechaNacimiento" class="form-label colorTextoH5"
+                  >Fecha de nacimiento</label
+                >
+                <input
+                  type="date"
+                  class="form-control inputColor"
+                  id="fechaNacimiento"
+                  required
+                />
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">
+                  Debes completar este campo también.
+                </div>
+              </div>
+              <!-- Avatars -->
+              <div class="mb-3 text-center">
+                <label for="avatar" class="mb-3 colorTextoH5"
+                  >Elegí tu avatar!</label
+                >
+                <div id="avatar-options">
+                  <div class="avatar-option">
+                    <input
+                      type="radio"
+                      name="avatar"
+                      id="avatar1"
+                      value="/assets/photos/crocodile.jpg"
+                      checked
+                    />
+                    <label for="avatar1">
+                      <img src="/assets/photos/crocodile.jpg" alt="Avatar 1" />
+                    </label>
+                  </div>
+                  <div class="avatar-option">
+                    <input
+                      type="radio"
+                      name="avatar"
+                      id="avatar2"
+                      value="/assets/photos/cuteBear.jpg"
+                    />
+                    <label for="avatar2">
+                      <img src="/assets/photos/cuteBear.jpg" alt="Avatar 2" />
+                    </label>
+                  </div>
+                  <div class="avatar-option">
+                    <input
+                      type="radio"
+                      name="avatar"
+                      id="avatar3"
+                      value="/assets/photos/kitty.jpg"
+                    />
+                    <label for="avatar3">
+                      <img src="/assets/photos/kitty.jpg" alt="Avatar 3" />
+                    </label>
+                  </div>
+                  <div class="avatar-option">
+                    <input
+                      type="radio"
+                      name="avatar"
+                      id="avatar4"
+                      value="/assets/photos/doggy.jpg"
+                    />
+                    <label for="avatar4">
+                      <img src="/assets/photos/doggy.jpg" alt="Avatar 4" />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn colorBotonRegistrarse my-2">
+                  Registrarse
+                </button>
+              </div>
+              <div></div>
+              <div id="modalError"></div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+    
 
-  <!-- Copyright -->
-  <div class="text-center p-4" style="color: white">
-    © 2023 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-      >Todos los derechos reservados Maxihome.com</a
-    >
-  </div>
-</footer>
-</section>
+    <!-- Footer -->
 
+    <footer class="text-center text-lg-start bg-dark text-muted mt-0">
+      <!-- Seccion Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Izquierda -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Seguinos en nuestras redes sociales</span>
+        </div>
 
-  <!-- Link Bootstrap 5 -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  <script src="../js/registrarsePrueba.js"></script>
-</body>
+        <!-- icon social media -->
+        <div>
+          <a href="/pages/enConstruccion.html" class="me-4 link-secondary">
+            <img src="/assets/photos/facebook.png" width="30px" />
+          </a>
+          <a href="/pages/enConstruccion.html" class="me-4 link-secondary">
+            <img src="/assets/photos/twitter.png" width="30px" />
+          </a>
+          <a href="/pages/enConstruccion.html" class="me-4 link-secondary">
+            <img src="/assets/photos/youtube.png" width="30px" />
+          </a>
+          <a href="/pages/enConstruccion.html" class="me-4 link-secondary">
+            <img src="/assets/photos/instagram.png" width="30px" />
+          </a>
+          <a href="/pages/enConstruccion.html" class="me-4 link-secondary">
+            <img src="/assets/photos/linkedin.png" width="30px" />
+          </a>
+        </div>
+      </section>
+
+      <!-- Seccion Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid columna -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4" style="font-size: 25px">
+                <a href="#"
+                  ><img src="/assets/photos/logo4.png" width="90px" /></a
+                >Maxihome
+              </h6>
+            </div>
+
+            <!-- Grid columna 1-->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Celulares</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Tecnología</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Electrodomesticos</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Tv / Audio</a
+                >
+              </p>
+            </div>
+
+            <!-- Grid columna 2-->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Recomendados</h6>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Smart TV</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Celulares</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Aire acondicionado</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Mas vendido</a
+                >
+              </p>
+            </div>
+
+            <!-- Grid columna 3 -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+              <p>
+                <img src="/assets/photos/home.png" style="width: 35px" /> Gral
+                Paz 689
+              </p>
+              <p>
+                <img src="/assets/photos/sobre.png" style="width: 35px" />
+                info@example.com
+              </p>
+              <p>
+                <img
+                  src="/assets/photos/phone.png"
+                  style="width: 35px"
+                />3814354690
+              </p>
+              <p>
+                <a class="nosotros" href="/pages/sobreNosotros.html"
+                  ><img src="/assets/photos/nosotros.png" style="width: 35px" />
+                  Sobre nosotros</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="color: white">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+          >Todos los derechos reservados Maxihome.com</a
+        >
+      </div>
+    </footer>
+
+    <!-- Link Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/registrarsePrueba.js"></script>
+  </body>
 </html>
