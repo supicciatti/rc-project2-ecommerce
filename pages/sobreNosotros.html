@@ -1,73 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="/styles/sobreNosotrosStyles.css" rel="stylesheet"/>
-</head>
-<body>
-    
-    <header></header>
-    <main>
-        <!--Sobre Nosotros Inicio -->
-        <section class="content about">
-            <h1 class="title">¿QUIENES SOMOS?</h1>
-            <P>Nuestro equipo trabaja hace mas de 10 años con Electrodomesticos de alta gama,nuestro sueño
-                es llegar a todo el pais con nuestros productos de alta calidad,nuestro equipo siempre se esfuerza 
-                por traer productos de buena calidad,y espero que disfruten de nuestros servicios.
-            </P>
-            
-                <div class="box-container2">
-                    <div class="card">
-                        <div class="box">
-                            <img src="./ft sele.jpg" alt="">
-                            <h3> Selena Maldonado</h3>
-                            <p>soy selena y estoy haciendo el curso de 
-                                FullStack en RollingCode para adentrarme al mundo del desarrollo web
-                            </p>
-                          
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="./ft axel.jpg" alt="">
-                            <h3> Axel Quiroga</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Nobis laborum laudantium architecto sequi
-                                 nesciunt similique enim quibusdam. Ut, dolorum corrupti. Rerum quam animi nam 
-                                 vitae molestiae consectetur ipsum tenetur perferendis.
-                            </p>
-        
-                        </div>
-                    </div>
-                    
-                   <div class="card">
-                    <div class="box">
-                        <img src="./ft enzo.jpg" alt="">
-                        <h3>Enzo Supicciatti</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                             Aperiam quibusdam vel perferendis mollitia dolores id animi molestias nam,
-                             aspernatur hic eaque voluptates dolorum iste provident labore veritatis libero, quaerat eius.</p>
-    
-                    </div>
-                   </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="./ft fede.jpg" alt="">
-                            <h3> Fede Pistan </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Debitis corrupti amet asperiores deserunt unde reiciendis omnis.
-                                 Tempora, repellat assumenda totam magni, quaerat at delectus sit et non molestias repellendus vel!</p>
-        
-                        </div>
-                    </div>
-    
+    <link href="/styles/sobreNosotrosStyles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <nav id="navbar" class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="../index.html" class="ms-3"
+            ><img src="/assets/photos/logo4.png" width="90px"
+          /></a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarCollapse"
+          >
+            <div class="navbar-nav ms-auto">
+              <div class="nav-item dropdown mx-1">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle dropdownStyles"
+                  data-bs-toggle="dropdown"
+                  >Celulares</a
+                >
+                <div class="dropdown-menu">
+                  <a href="/pages/samsungCelu.html" class="dropdown-item"
+                    >Celulares Samsung</a
+                  >
+                  <a href="/pages/enConstruccion.html" class="dropdown-item"
+                    >Celulares Motorola</a
+                  >
+                  <a href="/pages/enConstruccion.html" class="dropdown-item"
+                    >Celulares Apple</a
+                  >
                 </div>
-        </section>   
+              </div>
+              <div class="nav-item dropdown mx-1">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle dropdownStyles"
+                  data-bs-toggle="dropdown"
+                  >Tecnologia</a
+                >
+                <div class="dropdown-menu">
+                  <a href="/pages/notebook.html" class="dropdown-item"
+                    >Notebooks</a
+                  >
+                  <a href="/pages/enConstruccion.html" class="dropdown-item"
+                    >Tablets</a
+                  >
+                  <a href="/pages/enConstruccion.html" class="dropdown-item"
+                    >Videos juegos</a
+                  >
+                </div>
+              </div>
+              <div class="nav-item dropdown mx-1">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle dropdownStyles"
+                  data-bs-toggle="dropdown"
+                  >Electrodomesticos</a
+                >
+                <div class="dropdown-menu">
+                  <a href="/pages/heladera.html" class="dropdown-item"
+                    >Heladeras</a
+                  >
+                  <a href="/pages/enConstruccion.html" class="dropdown-item"
+                    >Lavarropas</a
+                  >
+                  <a href="/pages/enConstruccion.html" class="dropdown-item"
+                    >Aires</a
+                  >
+                </div>
+              </div>
+              <div class="nav-item dropdown mx-1">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle dropdownStyles"
+                  data-bs-toggle="dropdown"
+                  >Tv/Audio</a
+                >
+                <div class="dropdown-menu">
+                  <a href="/pages/smartTv.html" class="dropdown-item"
+                    >Smart Tv</a
+                  >
+                  <a href="/pages/enConstruccion.html" class="dropdown-item"
+                    >Parlantes portatiles</a
+                  >
+                </div>
+              </div>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-1">
+                  <a
+                    class="nav-link nav-item navItemStyles"
+                    aria-current="page"
+                    href="/pages/sobreNosotros.html"
+                    >Nosotros</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex mx-1">
+              <div class="input-group">
+                <input
+                  id="searchInput"
+                  type="text"
+                  class="form-control searchInputStyles"
+                  placeholder="¿Qué estás buscando?..."
+                />
+                <button type="button" class="btn buttonSearchStyles">
+                  <img
+                    src="/assets/photos/searchIcon.png"
+                    class="searchIconImg"
+                    alt="search icon"
+                  />
+                </button>
+                <ul id="suggestions" class="list-group"></ul>
+              </div>
+            </form>
+            <div class="navbar-nav" id="administration"></div>
+            <div class="navbar-nav">
+              <div id="user-info" class="navbar-nav me-4">
+                <a
+                  href="#"
+                  id="myAccount"
+                  class="nav-item nav-link text-center navItemStyles"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Sobre Nosotros Inicio -->
+      <section class="content about">
+        <h1 class="title">¿QUIENES SOMOS?</h1>
+        <p>
+          Nuestro equipo trabaja hace mas de 10 años con Electrodomesticos de
+          alta gama,nuestro sueño es llegar a todo el pais con nuestros
+          productos de alta calidad,nuestro equipo siempre se esfuerza por traer
+          productos de buena calidad,y espero que disfruten de nuestros
+          servicios.
+        </p>
+
+        <div class="box-container2">
+          <div class="card">
+            <div class="box">
+              <img src="./ft sele.jpg" alt="" />
+              <h3>Selena Maldonado</h3>
+              <p>
+                soy selena y estoy haciendo el curso de FullStack en RollingCode
+                para adentrarme al mundo del desarrollo web
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <img src="./ft axel.jpg" alt="" />
+              <h3>Axel Quiroga</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                laborum laudantium architecto sequi nesciunt similique enim
+                quibusdam. Ut, dolorum corrupti. Rerum quam animi nam vitae
+                molestiae consectetur ipsum tenetur perferendis.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <img src="./ft enzo.jpg" alt="" />
+              <h3>Enzo Supicciatti</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aperiam quibusdam vel perferendis mollitia dolores id animi
+                molestias nam, aspernatur hic eaque voluptates dolorum iste
+                provident labore veritatis libero, quaerat eius.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <img src="./ft fede.jpg" alt="" />
+              <h3>Fede Pistan</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                corrupti amet asperiores deserunt unde reiciendis omnis.
+                Tempora, repellat assumenda totam magni, quaerat at delectus sit
+                et non molestias repellendus vel!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
+
     <footer></footer>
-</body>
+    <script src="/js/navbar.js"></script>
+  </body>
 </html>
