@@ -9,107 +9,167 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"/>
-     <!--CSS-->
+      crossorigin="anonymous"
+    />
+    <!--CSS-->
     <link rel="stylesheet" href="../styles/detalleProductoStyles.css" />
-    <link rel="icon" type="image/-xicon" href="../Assets/photos/logo4.png">
+    <link rel="icon" type="image/-xicon" href="../Assets/photos/logo4.png" />
     <title>DetalleProducto</title>
   </head>
   <body>
+    <!-- Navbar -->
 
-      <!-- Navbar -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a href="/index.html"><img src="../Assets/photos/logo4.png" width="90px"></a>
-       
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a href="/index.html"
+          ><img src="/assets/photos/logo4.png" width="90px"
+        /></a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <div class="navbar-nav">
-                
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Celulares</a>
-                    <div class="dropdown-menu">
-                        <a href="/pages/samsungcelu.html" target="_blank" class="dropdown-item">Celulares Samsung</a>
-                        <a href="/pages/motorola.html" target="_blank" class="dropdown-item">Celulares Motorola</a>
-                        <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Celulares Apple</a>
-                        
-                        
-                        
-                        
-
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tecnologia</a>
-                    <div class="dropdown-menu">
-                        <a href="/pages/notebook.html" target="_blank" class="dropdown-item">Notebooks</a>
-                        <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Tablets</a>                    
-                        <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Videos juegos</a>                
-                    </div>
-                </div>
-                
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Electrodomesticos</a>
-                    <div class="dropdown-menu">
-                        <a href="/pages/heladera.html" target="_blank" class="dropdown-item">Heladeras</a>
-                        
-                        
-                        <a href="#" class="dropdown-item">Lavarropas</a>
-                        <a href="#" class="dropdown-item">Aires</a>
-                        
-
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tv/Audio</a>
-                    <div class="dropdown-menu">
-                        <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Smart Tv</a>
-                        <a href="/pages/enConstruccion.html" target="_blank" class="dropdown-item">Parlantes portatiles</a>
-                        
-                        
-
-                    </div>
-                </div>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                         <a class="nav-link active" aria-current="page" href="/pages/sobreNosotros.html" target="_blank" style="color:white">Nosotros</a>
-                   </li>
-                </ul>
-
-                
-
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav">
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Celulares</a
+              >
+              <div class="dropdown-menu">
+                <a href="/pages/samsungcelu.html" class="dropdown-item"
+                  >Celulares Samsung</a
+                >
+                <a href="/pages/motorola.html" class="dropdown-item"
+                  >Celulares Motorola</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Celulares Apple</a
+                >
+              </div>
             </div>
-            <form class="d-flex">
-                <div class="input-group">                    
-                    <input type="text" class="form-control" placeholder="Search">
-                    <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
-                </div>
-            </form>
-            
-            <div class="navbar-nav">
-                <a href="#"><button class="btn-cart"><img src="../Assets/photos/cart-red.svg"></a></button>
-            <a href="/pages/login.html" target="_blank" class="nav-item nav-link">Ingresá</a>
-            <a href="/pages/registrarse.html" target="_blank" class="nav-item nav-link">Crear cuenta</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Tecnologia</a
+              >
+              <div class="dropdown-menu">
+                <a href="/pages/notebook.html" class="dropdown-item"
+                  >Notebooks</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Tablets</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Monitores</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Videos juegos</a
+                >
+              </div>
             </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Electrodomesticos</a
+              >
+              <div class="dropdown-menu">
+                <a href="/pages/heladera.html" class="dropdown-item"
+                  >Heladeras</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Freezers</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Lavarropas</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Aires</a
+                >
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Tv/Audio</a
+              >
+              <div class="dropdown-menu">
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Smart Tv</a
+                >
+                <a href="/pages/enConstruccion.html" class="dropdown-item"
+                  >Parlantes portatiles</a
+                >
+              </div>
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/pages/sobreNosotros.html"
+                  style="color: white"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex">
+            <div class="input-group">
+              <input
+                id="searchInput"
+                type="text"
+                class="form-control"
+                placeholder="Buscar..."
+              />
+              <button type="button" class="btn btn-secondary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+              <ul id="suggestions" class="list-group"></ul>
+            </div>
+          </form>
+          <div class="navbar-nav">
+            <a href="#"
+              ><button class="btn-cart">
+                <img src="/assets/photos/cart-red.svg" /></button
+            ></a>
+            <a href="/pages/login.html" class="nav-item nav-link">Ingresá</a>
+            <a href="/pages/registrarse.html" class="nav-item nav-link"
+              >Crear cuenta</a
+            >
+          </div>
         </div>
-    </div>
-</nav>
-
-
-
-
-
-
-
+      </div>
+    </nav>
 
     <!-- CAJA QUE CONTIENE TODO EL DOCUMENTO -->
     <main class="product-detail">
-      
-   
-    <section class="container-fluid" >
-      
+      <section class="container-fluid">
         <div class="d-flex flex-column flex-lg-row mb-4">
           <!-- CAROUSEL DE PRODUCTO SELECCIONADO -->
           <div
@@ -168,17 +228,14 @@
           </div>
           <!-- CAJA DESCRIPCIÓN PRODUCTO -->
           <div class="my-3 col-lg-3">
-            <h2 class="my-2">
-              Samsung Galaxy S23 Plus 8gb 256gb Phantom 
-            </h2>
+            <h2 class="my-2">Samsung Galaxy S23 Plus 8gb 256gb Phantom</h2>
             <h6 style="text-decoration: line-through; color: grey">$429.999</h6>
             <h2>$389.999</h2>
             <div class="my-2">
               <img
                 src="../Assets/photos/enviado.png"
                 alt="camion icon"
-                class="deliveryIcon" 
-
+                class="deliveryIcon"
               />
               <span>Te llega GRATIS en 48hs hábiles</span>
             </div>
@@ -217,359 +274,386 @@
             </button>
           </div>
         </div>
-      
-    </section>
+      </section>
     </main>
-    
-      <div class="carousel-one">
-        <h4 class="text-center" style="font-size: 40px;">Productos que quizás te interesen</h4>
-        
 
+    <div class="carousel-one">
+      <h4 class="text-center" style="font-size: 40px">
+        Productos que quizás te interesen
+      </h4>
 
-
-        <!-- Carousel de prod relacionados -->
-         
-    
-
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide container-fluid"
-          data-ride="carousel">
-          <div class="carousel-inner mx-auto">
-            <div class="carousel-item active">
-              <div class="row m-3 justify-content-center text-center">
-                <div class="col-4" style="border-style: solid;">
-                  <img
-                    src="../Assets/photos/freezer.png"
-                    class="img-fluid"
-                    alt="imagen1"/>
-                    <h3>Freezer Whirpool</h3>
-                </div>
-                <div class="col-4" style="border-style: solid;">
-                  <img
-                    src="../Assets/photos/tablet3.png"
-                    class="img-fluid"
-                    alt="imagen1"
-                  />
-                 <h3>Tablet Samsung</h3>
-                </div>
-                <div class="col-4" style="border-style: solid;">
-                  <img
-                    src="../Assets/photos/notebook8.png"
-                    class="img-fluid"
-                    alt="imagen1"
-                  />
-                 <h3>Notebook Lenovo</h3>
-                </div>
+      <!-- Carousel de prod relacionados -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide container-fluid"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner mx-auto">
+          <div class="carousel-item active">
+            <div class="row m-3 justify-content-center text-center">
+              <div class="col-4" style="border-style: solid">
+                <img
+                  src="../Assets/photos/freezer.png"
+                  class="img-fluid"
+                  alt="imagen1"
+                />
+                <h3>Freezer Whirpool</h3>
+              </div>
+              <div class="col-4" style="border-style: solid">
+                <img
+                  src="../Assets/photos/tablet3.png"
+                  class="img-fluid"
+                  alt="imagen1"
+                />
+                <h3>Tablet Samsung</h3>
+              </div>
+              <div class="col-4" style="border-style: solid">
+                <img
+                  src="../Assets/photos/notebook8.png"
+                  class="img-fluid"
+                  alt="imagen1"
+                />
+                <h3>Notebook Lenovo</h3>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="row m-3 text-center">
-                <div class="col-4" style="border-style: solid;">
-                  <img
-                    src="../Assets/photos/notebook7.png"
-                    class="img-fluid"
-                    alt="imagen1"
-                  />
-                  <h3>Notebook Apple</h3>
-                </div>
-                <div class="col-4" style="border-style: solid;">
-                  <img
-                    src="../Assets/photos/notebook.png"
-                    class="img-fluid"
-                    alt="imagen1"/>
-                    <h3>Notebook HP</h3>
-                </div>
-                <div class="col-4" style="border-style: solid;">
-                  <img
-                    src="../Assets/photos/tablet3.png"
-                    class="img-fluid"
-                    alt="imagen1" 
-                  />
-                 <h3>Tablet Lenovo</h3>
-                </div>
-              </div>
-            </div>
-           
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <div class="carousel-item">
+            <div class="row m-3 text-center">
+              <div class="col-4" style="border-style: solid">
+                <img
+                  src="../Assets/photos/notebook7.png"
+                  class="img-fluid"
+                  alt="imagen1"
+                />
+                <h3>Notebook Apple</h3>
+              </div>
+              <div class="col-4" style="border-style: solid">
+                <img
+                  src="../Assets/photos/notebook.png"
+                  class="img-fluid"
+                  alt="imagen1"
+                />
+                <h3>Notebook HP</h3>
+              </div>
+              <div class="col-4" style="border-style: solid">
+                <img
+                  src="../Assets/photos/tablet3.png"
+                  class="img-fluid"
+                  alt="imagen1"
+                />
+                <h3>Tablet Lenovo</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Caja descripción del producto -->
+    <div class="m-4 textBoxContainer mt-5">
+      <h4 class="my-2">Descripción</h4>
+      <div id="textBox" class="sumTextBox">
+        <h5>CAMARA</h5>
+        <p>
+          Hacé que las noches sean más épicas con la cámara nocturna Es un kit
+          de nivel profesional que cabe en una mano. La cámara posterior triple
+          y la cámara de selfie ofrecen hardware y software de cámara
+          innovadores para que puedas capturar fácilmente una galería llena de
+          contenido digno de compartir.
+        </p>
+        <h5>CÁMARA NOCTURNA</h5>
+        <p>
+          Mejorá tu vida nocturna #cámaranocturna Lo mejor sucede después de que
+          anochece. Capturá la imagen con las épicas actualizaciones
+          tecnológicas de nuestra cámara de nivel profesional. El sensor grande
+          de píxeles amplía los píxeles para atraer la luz mientras que el
+          cristal súper transparente reduce el resplandor de la lente, todo para
+          que las fotos y los videos nocturnos salgan tan claros como el día.
+        </p>
+        <h5>VIDEOS NOCTURNOS</h5>
+        <p>
+          La cámara nocturna captura las horas más oscuras La inspiración no
+          espera una iluminación óptima y ahora tampoco tenés que hacerlo. El
+          mayor salto en nuestra tecnología de video, la velocidad de fotogramas
+          automática coincide con la velocidad de fps de tu entorno y Super
+          Night Solution elimina el ruido en cada fotograma para obtener
+          imágenes vívidas de alta calidad, ya sea que estés bajo el sol o bajo
+          las estrellas.
+        </p>
+        <h5>RETRATOS DE NOCHE</h5>
+        <p>
+          La cámara nocturna pone los retratos bajo una nueva luz. Conseguí
+          retratos y autorretratos épicos con poca luz gracias a las
+          revolucionarias actualizaciones de la cámara posterior y la cámara de
+          selfie. Cada una captura más luz para lograr colores y detalles
+          increíbles, para que puedas dominar el modo Retrato en condiciones de
+          baja iluminación.
+        </p>
+        <h5>VIDEO CONTINUO</h5>
+        <p>
+          Ahora te movés y ya no importa La vida no se detiene. Pero tu video lo
+          hará. Nuestra cámara de nivel profesional graba videos nítidos y
+          estables que se mantienen fluidos incluso cuando te movés. ¿Cómo lo
+          hicimos? El ángulo de corrección de OIS ha sido mejorado en un 58 % y
+          funciona con muestreo de movimiento más rápido para estabilizar tus
+          tomas. Y tu día a día ahora es más épico y colorido con Super HDR que
+          captura la imagen con 64 veces más información de color, incluso si la
+          escena está retroiluminada.
+        </p>
+        <h5>ALTA RESOLUCIÓN</h5>
+        <p>
+          Cada detalle, ahora es tuyo para que lo captures. Fotografiá sin
+          parar. Siempre tendrás una galería de fotos nítidas y de alta calidad.
+          Dentro de este sensor de alta resolución se encuentra Adaptive Pixel,
+          que cambia los píxeles para adaptarse a la iluminación. Activá el
+          mejorador de detalles antes de hacer las capturas. Mejorá de manera
+          inteligente tus tomas al ajustar las sombras y los tonos claros.
+        </p>
+        <h5>BORRADOR DE OBJETOS</h5>
+        <p>
+          Las fotos arruinadas a propósito son cosa del pasado. Mantené el
+          enfoque donde pertenece: tu talento. Eliminá manualmente personas u
+          objetos del fondo de tus capturas, dejando solo lo que querés que vean
+          tus seguidores.
+        </p>
+        <h5>PANTALLA</h5>
+        <p>
+          Adiós, resplandor. Las asombrosas pantallas Infinity-O de 120 Hz están
+          diseñadas con Dynamic AMOLED 2X con tecnología Vision Booster para una
+          alta visibilidad al aire libre, lo que mantiene la vista nítida a
+          plena luz del día o de noche. Ahora el único resplandor que verás será
+          el de las cámaras de los celosos.
+        </p>
+        <h5>BATERÍA</h5>
+        <p>
+          Disfrutá la noche sin necesidad de cables. La vida no disminuye su
+          ritmo y tomar un descanso para recargar energía es una vía rápida para
+          la ansiedad de estar desconectado. La batería se adapta de manera
+          inteligente a la forma en que usás tu smartphone, por lo que dura más
+          de 24 horas
+        </p>
+      </div>
+      <a id="showMore" href="#textBox" onclick="showFullDescription()"
+        >Ver descripción completa</a
+      >
+    </div>
+    <!-- Caja de preguntas/respuestas -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <h1 class="mb-3">Haz una pregunta</h1>
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="your-name" class="form-label">Tu nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="your-name"
+                  placeholder="Tu nombre"
+                  name="tu-nombre"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="your-surname" class="form-label">Tu email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="your-surname"
+                  placeholder="Tu email"
+                  name="tu-email"
+                  required
+                />
+              </div>
+
+              <div class="col-12">
+                <label for="your-message" class="form-label">Tu pregunta</label>
+                <textarea
+                  class="form-control"
+                  id="your-message"
+                  placeholder="Tu pregunta"
+                  name="tu-mensaje"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-6">
+                    <button class="btn-enviar btn-dark w-100 fw-bold">
+                      Enviar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Últimas preguntas/respuestas -->
+    <div class="row questionBox m-3">
+      <div class="row">
+        <div id="userName" class="col-3">nombre de usuario</div>
+        <div id="userQuestion" class="col-8">pregunta</div>
+      </div>
+      <div id="adminAnswer" class="col">respuesta</div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="text-center text-lg-start bg-dark text-muted">
+      <!-- Seccion Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Izquierda -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Seguinos en nuestras redes sociales</span>
+        </div>
+
+        <!-- icon social media -->
+        <div>
+          <a href="/pages/enConstruccion.html" class="me-4 link-secondary">
+            <img src="/assets/photos/facebook.png" width="30px" />
           </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <a href="/pages/enConstruccion.html" class="me-4 link-secondary">
+            <img src="/assets/photos/twitter.png" width="30px" />
+          </a>
+          <a href="/pages/enConstruccion.html" class="me-4 link-secondary">
+            <img src="/assets/photos/youtube.png" width="30px" />
+          </a>
+          <a href="/pages/enConstruccion.html" class="me-4 link-secondary">
+            <img src="/assets/photos/instagram.png" width="30px" />
+          </a>
+          <a href="/pages/enConstruccion.html" class="me-4 link-secondary">
+            <img src="/assets/photos/linkedin.png" width="30px" />
           </a>
         </div>
-      </div> 
-      
+      </section>
 
+      <!-- Seccion Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid columna -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4" style="font-size: 25px">
+                <a href="#"
+                  ><img src="/assets/photos/logo4.png" width="90px" /></a
+                >Maxihome
+              </h6>
+            </div>
 
+            <!-- Grid columna 1-->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Celulares</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Tecnología</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Electrodomesticos</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Tv / Audio</a
+                >
+              </p>
+            </div>
 
+            <!-- Grid columna 2-->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Recomendados</h6>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Smart TV</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Celulares</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Aire acondicionado</a
+                >
+              </p>
+              <p>
+                <a href="/pages/enConstruccion.html" class="text-reset"
+                  >Mas vendido</a
+                >
+              </p>
+            </div>
 
-      <!-- Caja descripción del producto -->
-      <div class="m-4 textBoxContainer mt-5">
-        <h4 class="my-2">Descripción</h4>
-        <div id="textBox" class="sumTextBox">
-          <h5>CAMARA</h5>
-          <p>
-            Hacé que las noches sean más épicas con la cámara nocturna Es un kit
-            de nivel profesional que cabe en una mano. La cámara posterior
-            triple y la cámara de selfie ofrecen hardware y software de cámara
-            innovadores para que puedas capturar fácilmente una galería llena de
-            contenido digno de compartir.
-          </p>
-          <h5>CÁMARA NOCTURNA</h5>
-          <p>
-            Mejorá tu vida nocturna #cámaranocturna Lo mejor sucede después de
-            que anochece. Capturá la imagen con las épicas actualizaciones
-            tecnológicas de nuestra cámara de nivel profesional. El sensor
-            grande de píxeles amplía los píxeles para atraer la luz mientras que
-            el cristal súper transparente reduce el resplandor de la lente, todo
-            para que las fotos y los videos nocturnos salgan tan claros como el
-            día.
-          </p>
-          <h5>VIDEOS NOCTURNOS</h5>
-          <p>
-            La cámara nocturna captura las horas más oscuras La inspiración no
-            espera una iluminación óptima y ahora tampoco tenés que hacerlo. El
-            mayor salto en nuestra tecnología de video, la velocidad de
-            fotogramas automática coincide con la velocidad de fps de tu entorno
-            y Super Night Solution elimina el ruido en cada fotograma para
-            obtener imágenes vívidas de alta calidad, ya sea que estés bajo el
-            sol o bajo las estrellas.
-          </p>
-          <h5>RETRATOS DE NOCHE</h5>
-          <p>
-            La cámara nocturna pone los retratos bajo una nueva luz. Conseguí
-            retratos y autorretratos épicos con poca luz gracias a las
-            revolucionarias actualizaciones de la cámara posterior y la cámara
-            de selfie. Cada una captura más luz para lograr colores y detalles
-            increíbles, para que puedas dominar el modo Retrato en condiciones
-            de baja iluminación.
-          </p>
-          <h5>VIDEO CONTINUO</h5>
-          <p>
-            Ahora te movés y ya no importa La vida no se detiene. Pero tu video
-            lo hará. Nuestra cámara de nivel profesional graba videos nítidos y
-            estables que se mantienen fluidos incluso cuando te movés. ¿Cómo lo
-            hicimos? El ángulo de corrección de OIS ha sido mejorado en un 58 %
-            y funciona con muestreo de movimiento más rápido para estabilizar
-            tus tomas. Y tu día a día ahora es más épico y colorido con Super
-            HDR que captura la imagen con 64 veces más información de color,
-            incluso si la escena está retroiluminada.
-          </p>
-          <h5>ALTA RESOLUCIÓN</h5>
-          <p>
-            Cada detalle, ahora es tuyo para que lo captures. Fotografiá sin
-            parar. Siempre tendrás una galería de fotos nítidas y de alta
-            calidad. Dentro de este sensor de alta resolución se encuentra
-            Adaptive Pixel, que cambia los píxeles para adaptarse a la
-            iluminación. Activá el mejorador de detalles antes de hacer las
-            capturas. Mejorá de manera inteligente tus tomas al ajustar las
-            sombras y los tonos claros.
-          </p>
-          <h5>BORRADOR DE OBJETOS</h5>
-          <p>
-            Las fotos arruinadas a propósito son cosa del pasado. Mantené el
-            enfoque donde pertenece: tu talento. Eliminá manualmente personas u
-            objetos del fondo de tus capturas, dejando solo lo que querés que
-            vean tus seguidores.
-          </p>
-          <h5>PANTALLA</h5>
-          <p>
-            Adiós, resplandor. Las asombrosas pantallas Infinity-O de 120 Hz
-            están diseñadas con Dynamic AMOLED 2X con tecnología Vision Booster
-            para una alta visibilidad al aire libre, lo que mantiene la vista
-            nítida a plena luz del día o de noche. Ahora el único resplandor que
-            verás será el de las cámaras de los celosos.
-          </p>
-          <h5>BATERÍA</h5>
-          <p>
-            Disfrutá la noche sin necesidad de cables. La vida no disminuye su
-            ritmo y tomar un descanso para recargar energía es una vía rápida
-            para la ansiedad de estar desconectado. La batería se adapta de
-            manera inteligente a la forma en que usás tu smartphone, por lo que
-            dura más de 24 horas
-          </p>
+            <!-- Grid columna 3 -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+              <p>
+                <img src="/assets/photos/home.png" style="width: 35px" /> Gral
+                Paz 689
+              </p>
+              <p>
+                <img src="/assets/photos/sobre.png" style="width: 35px" />
+                info@example.com
+              </p>
+              <p>
+                <img
+                  src="/assets/photos/phone.png"
+                  style="width: 35px"
+                />3814354690
+              </p>
+              <p>
+                <a class="nosotros" href="/pages/sobreNosotros.html"
+                  ><img src="/assets/photos/nosotros.png" style="width: 35px" />
+                  Sobre nosotros</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
-        <a id="showMore" href="#textBox" onclick="showFullDescription()"
-          >Ver descripción completa</a
+      </section>
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="color: white">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+          >Todos los derechos reservados Maxihome.com</a
         >
       </div>
-      <!-- Caja de preguntas/respuestas -->
-      <div class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-9">
-      <h1 class="mb-3">Haz una pregunta</h1>
-      <form>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <label for="your-name" class="form-label">Tu nombre</label>
-            <input type="text" class="form-control" id="your-name" placeholder="Tu nombre" name="tu-nombre" required>
-          </div>
-          <div class="col-md-6">
-            <label for="your-surname" class="form-label">Tu email</label>
-            <input type="text" class="form-control" id="your-surname" placeholder="Tu email" name="tu-email" required>
-          </div>
-          
-          <div class="col-12">
-            <label for="your-message" class="form-label">Tu pregunta</label>
-            <textarea class="form-control" id="your-message" placeholder="Tu pregunta" name="tu-mensaje" rows="5" required></textarea>
-          </div>
-          <div class="col-12">
-            <div class="row">
-              <div class="col-md-6">
-                <button  class="btn-enviar btn-dark w-100 fw-bold" >Enviar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-
-
-      
-        <!-- Últimas preguntas/respuestas -->
-        <div class="row questionBox m-3">
-          <div class="row">
-            <div id="userName" class="col-3">nombre de usuario</div>
-            <div id="userQuestion" class="col-8">pregunta</div>
-          </div>
-          <div id="adminAnswer" class="col">respuesta</div>
-        </div>
-      </div>
-    </section>
-
-   <!-- Footer -->
-<footer class="text-center text-lg-start bg-dark text-muted">
-  <!-- Seccion Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Izquierda -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Seguinos en nuestras redes sociales</span>
-    </div>
-    
-
-    <!-- icon social media -->
-    <div>
-      <a href="" class="me-4 link-secondary">
-        <img src="../Assets/photos/facebook.png" width="30px">
-        
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <img src="../Assets/photos/twitter.png" width="30px">
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <img src="../Assets/photos/youtube.png" width="30px">
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <img src="../Assets/photos/instagram.png" width="30px">
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <img src="../Assets/photos/linkedin.png" width="30px">
-      </a>
-        
-    </div>
-    
-  </section>
-  
-
-  <!-- Seccion Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid columna -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4" style="font-size: 25px;">
-            <a href=""><img src="../Assets/photos/logo4.png" width="90px"></a>Maxihome
-          </h6>
-          
-        </div>
-        
-
-        <!-- Grid columna 1-->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Productos
-          </h6>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Celulares</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Tecnología</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Electrodomesticos</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Tv / Audio</a>
-          </p>
-        </div>
-        
-
-        <!-- Grid columna 2-->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Recomendados
-          </h6>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Smart TV</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Celulares</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Aire acondicionado</a>
-          </p>
-          <p>
-            <a href="/pages/enConstruccion.html" target="_blank" class="text-reset">Mas vendido</a>
-          </p>
-        </div>
-        
-
-        <!-- Grid columna 3 -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-          <p><img src="../Assets/photos/home.png" style="width:35px"> Gral Paz 689</p>
-          <p>
-            <img src="../Assets/photos/sobre.png" style="width:35px">
-            info@example.com
-          </p>
-          <p><img src="../Assets/photos/phone.png" style="width:35px">3814354690</p>
-          <p><a class="nosotros" href="/pages/sobreNosotros.html"><img src="../Assets/photos/nosotros.png" style="width:35px">  Sobre nosotros</a></p>
-         
-        </div>
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  
-
-  <!-- Copyright -->
-  <div class="text-center p-4 " style="color:white;">
-    © 2023 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Todos los derechos reservados Maxihome.com</a>
-  </div>
-</footer>
-
+    </footer>
 
     <!-- Link Bootstrap 5 -->
     <script src="../js/detalleProducto.js"></script>
@@ -578,6 +662,5 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-
   </body>
 </html>
