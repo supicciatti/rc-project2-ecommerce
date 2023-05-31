@@ -235,3 +235,11 @@ img.avatar-img {
   box-sizing: border-box;
   box-shadow: 0.5px 0.5px 6px 1px #8739f9;
 }
+
+.imgPrueba {
+  background-image: url(ruta_de_la_imagen.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+}

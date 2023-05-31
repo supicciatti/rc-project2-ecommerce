@@ -102,6 +102,7 @@ username: "Enzo Supicciatti"; */
 
     myAccount.textContent = `Hola ${userAttributes.username} ! `;
     myAccount.style.textAlign = "center";
+    myAccount.href = "https://mxhome.netlify.app/pages/enconstruccion";
 
     // Crear y agregar la imagen del avatar
 
@@ -110,10 +111,19 @@ username: "Enzo Supicciatti"; */
     avatarImg.classList.add("avatar-img");
     myAccount.appendChild(avatarImg);
 
-    //PENDIENTE HACER QUE CUANDO USUARIO ESTÉ LOGEADO, LLEVE A PRODUCTOS FAVORITOS
-
     // Agrega la clase "logged-in" al navbar, la cual modificará su apariencia
     navbar.classList.add("logged-in");
+    if (userAttributes.username === "admin") {
+      let administration = document.getElementById("administration");
+      let administrationLink = document.createElement("a");
+      administrationLink.href =
+        "https://mxhome.netlify.app/pages/administracion.html";
+      administrationLink.textContent = "Administración";
+
+      myAccount.href = "https://mxhome.netlify.app/pages/administracion.html";
+
+      administration.appendChild(administrationLink);
+    }
   } else {
     // No hay usuario registrado, mostrar "Mi Cuenta"
     myAccount.textContent = "Mi Cuenta";

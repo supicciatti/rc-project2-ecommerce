@@ -44,7 +44,7 @@ if (productsJSON) {
     },
     {
       imagen: "../assets/photos/motorola4Size.png",
-      titulo: "Motorola E32 Dual Sim",
+      titulo: "Motorola E32 Dual Sim 128 GB 6 GB RAM",
       precio: 63999,
       promocion: "Envío gratis en CABA",
       unidades: 98,

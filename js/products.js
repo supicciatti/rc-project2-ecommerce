@@ -14,7 +14,7 @@ for (let i = 0; i < 3; i++) {
   card.innerHTML = `
     <div class="card-body ">
       <div class="text-center">
-        <img class="img-fluid" src="${product.imagen}">
+        <img class="img-fluid imgPrueba" src="${product.imagen}">
         <br><br>
         <h5 class="card-title d-flex align-items-center justify-content-center">${product.titulo}</h5>
       </div>
@@ -40,7 +40,7 @@ for (let i = 3; i < 9; i++) {
   card.innerHTML = `
             <div class="card-body d-flex flex-column h-100">
               <div class="text-center">
-                <img src="${product.imagen}" class="img-fluid mb-6 my-auto" alt="Websearch">
+                <img src="${product.imagen}" class="img-fluid mb-6 my-auto imgPrueba" alt="Websearch">
               </div>
               <div class="card-title mb-4 text-center fs-2">${product.titulo}</div>
               <div class="text-center mb-4">
