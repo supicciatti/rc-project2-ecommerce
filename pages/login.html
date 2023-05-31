@@ -209,7 +209,47 @@
                 >
                   ¿Olvidaste tu contraseña?
                 </a>
-                <div class="modal" id="recuperoDeContraseña" tabindex="-1">
+
+              </div>
+              <div class="botones">
+                <div class="d-flex justify-content-center">
+                  <button
+                    type="submit"
+                    form="loginForm"
+                    class="btn loginButton mb-2 w-75"
+                  >
+                    Iniciar sesión
+                  </button>
+                </div>
+                <div class="py-1 d-flex justify-content-center">
+                  <button
+                    type="submit"
+                    class="btn loginGoogle mb-2 w-75 d-flex flex-row justify-content-center">
+                    <img
+                      src="../assets/photos/googleIcon.png"
+                      alt="google icon"
+                      class="me-3 googleIconSize"
+                    />
+                    <span> Iniciar sesión con Google</span>
+                  </button>
+                </div>
+                <div class="py-1 d-flex justify-content-center">
+                  <button type="submit" class="btn loginFacebook mb-2 w-75 d-flex flex-row justify-content-center">
+                    <img
+                      src="../assets/photos/facebookIcon.png"
+                      alt="facebook icon"
+                      class="me-3 googleIconSize"
+                    />
+                    <span> Iniciar sesión con Facebook</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+                    <div class="modal" id="recuperoDeContraseña" tabindex="-1">
                   <div class="modal-dialog">
                     <div class="modal-content modalDesign">
                       <div class="modal-body">
@@ -254,12 +294,13 @@
                             </div>
                           </div>
                           <div class="d-flex justify-content-center">
+                            
                             <button
                               type="submit"
                               form="forgottenPassword"
                               class="btn loginButton py-2"
                             >
-                              Enviar contraseña
+                              <a href="enConstruccion.html">  Enviar contraseña</a>
                             </button>
                           </div>
                         </form>
@@ -267,45 +308,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="botones">
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="submit"
-                    form="loginForm"
-                    class="btn loginButton mb-2 w-75"
-                  >
-                    Iniciar sesión
-                  </button>
-                </div>
-                <div class="py-1 d-flex justify-content-center">
-                  <button
-                    type="submit"
-                    class="btn loginGoogle mb-2 w-75 d-flex flex-row justify-content-center">
-                    <img
-                      src="../assets/photos/googleIcon.png"
-                      alt="google icon"
-                      class="me-3 googleIconSize"
-                    />
-                    <span> Iniciar sesión con Google</span>
-                  </button>
-                </div>
-                <div class="py-1 d-flex justify-content-center">
-                  <button type="submit" class="btn loginFacebook mb-2 w-75 d-flex flex-row justify-content-center">
-                    <img
-                      src="../assets/photos/facebookIcon.png"
-                      alt="facebook icon"
-                      class="me-3 googleIconSize"
-                    />
-                    <span> Iniciar sesión con Facebook</span>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Footer -->
 <footer class="text-center text-lg-start bg-dark text-muted mt-0">
