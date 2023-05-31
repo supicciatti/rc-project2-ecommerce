@@ -217,8 +217,6 @@ formulario.addEventListener("submit", function (event) {
   guardarProductosEnLocalStorage();
 });
 
-// ...
-
 // Obtener el botón "Agregar producto"
 let botonAgregar = document.getElementById("botonAgregarProducto");
 
@@ -244,3 +242,164 @@ function guardarProductosEnLocalStorage() {
   let productsJSON = JSON.stringify(products);
   localStorage.setItem("products", productsJSON);
 }
+// Obtener los usuarios almacenados en el localStorage
+let usersJSON = localStorage.getItem("users");
+
+if (usersJSON) {
+  // Convertir la cadena JSON a un array de objetos
+  users = JSON.parse(usersJSON);
+} else {
+  users = [
+    {
+      email: "admin@admin.com",
+      password: "Admin1234",
+      username: "admin",
+      avatar: "../assets/photos/cuteBear.jpg",
+    },
+  ];
+  saveUsersToLocalStorage();
+}
+
+// Llamar a la función para renderizar los usuarios
+renderUsers();
+
+// Función para renderizar los usuarios en la tabla
+function renderUsers() {
+  let usersTable = document.getElementById("usersTable");
+  usersTable.innerHTML = "";
+
+  users.forEach(function (user) {
+    let row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${user.username}</td>
+      <td>${user.email}</td>
+      <td>${user.password}</td>
+      <td><img src="${
+        user.avatar || "default-avatar.png"
+      }" alt="Avatar" class="avatar"></td>
+      <td>
+        <button type="button" class="btn btn-warning editar" data-email="${
+          user.email
+        }">Editar</button>
+        <button type="button" class="btn btn-danger eliminar" data-email="${
+          user.email
+        }">Eliminar</button>
+      </td>
+    `;
+
+    usersTable.appendChild(row);
+  });
+
+  // Agregar event listeners a los botones de editar y eliminar
+  let editButtons = document.querySelectorAll(".editar");
+  editButtons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      let email = event.target.dataset.email;
+      let username = prompt("Ingrese el nuevo nombre de usuario:");
+      let password = prompt("Ingrese la nueva contraseña:");
+
+      updateUser(email, username, password);
+    });
+  });
+
+  let deleteButtons = document.querySelectorAll(".eliminar");
+  deleteButtons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      let email = event.target.dataset.email;
+      deleteUser(email);
+    });
+  });
+}
+
+// Función para obtener un usuario por su email
+function getUserByEmail(email) {
+  return users.find(function (user) {
+    return user.email === email;
+  });
+}
+
+// Función para actualizar los datos de un usuario
+function updateUser(email, username, password) {
+  let user = getUserByEmail(email);
+  if (user) {
+    user.username = username;
+    user.password = password;
+    renderUsers();
+    alert(`Usuario actualizado: ${user.username}`);
+    saveUsersToLocalStorage();
+  }
+}
+
+// Función para eliminar un usuario
+function deleteUser(email) {
+  let index = users.findIndex(function (user) {
+    return user.email === email;
+  });
+
+  if (index !== -1) {
+    let user = users[index];
+    users.splice(index, 1);
+    renderUsers();
+    alert(`Usuario eliminado: ${user.username}`);
+    saveUsersToLocalStorage();
+  }
+}
+
+// Obtener el formulario y agregar un event listener para el evento "submit"
+let userForm = document.getElementById("userForm");
+userForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  let username = document.getElementById("inputUsername").value;
+  let email = document.getElementById("inputEmail").value;
+  let password = document.getElementById("inputPassword").value;
+  let avatar = document.getElementById("inputAvatar").files[0];
+  let avatarURL = "";
+
+  if (avatar) {
+    // Cargar la imagen al servidor o almacenarla de alguna manera y obtener su URL
+    // Aquí puedes implementar la lógica para cargar la imagen al servidor
+    avatarURL = "../assets/photos/" + avatar.name;
+  }
+
+  let newUser = {
+    username: username,
+    email: email,
+    password: password,
+    avatar: avatarURL,
+  };
+
+  users.push(newUser);
+
+  userForm.reset();
+
+  renderUsers();
+  alert(`Usuario agregado exitosamente: ${newUser.username}`);
+  saveUsersToLocalStorage();
+});
+
+// Función para guardar los usuarios en el localStorage
+function saveUsersToLocalStorage() {
+  let usersJSON = JSON.stringify(users);
+  localStorage.setItem("users", usersJSON);
+}
+
+// Obtener el botón "Agregar usuario"
+let addUserButton = document.getElementById("addUserButton");
+
+// Obtener el formulario de usuario
+userForm = document.getElementById("userForm");
+
+// Agregar un event listener al botón "Agregar usuario"
+addUserButton.addEventListener("click", function () {
+  userForm.style.display = "block";
+});
+
+// Agregar un event listener al formulario de usuario para ocultarlo cuando se envía
+userForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  userForm.style.display = "none";
+});
+
+// Llamar a la función para renderizar los usuarios
+renderUsers();

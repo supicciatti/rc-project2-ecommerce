@@ -55,7 +55,7 @@
         <div class="container mt-5">
           <div id="divFormulario">
             <h2 class="titulo text-center">Agregar Producto</h2>
-            <form id="formulario">
+            <form id="formulario" style="display: none">
               <div class="mb-3">
                 <label for="inputCodigo" class="form-label">Código</label>
                 <input
@@ -120,6 +120,60 @@
           </button>
         </div>
       </div>
+    </div>
+    <div>
+      <h1>Usuarios Registrados</h1>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre de Usuario</th>
+            <th scope="col">Correo Electrónico</th>
+            <th scope="col">Contraseña</th>
+            <th scope="col">Avatar</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="usersTable">
+          <!-- Los usuarios se generan dinámicamente desde JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+    <form id="userForm" style="display: none">
+      <h2>Agregar Nuevo Usuario</h2>
+      <div>
+        <label for="inputUsername" class="form-label">Nombre de Usuario:</label>
+        <input type="text" class="form-control" id="inputUsername" required />
+      </div>
+      <div>
+        <label for="inputEmail" class="form-label">Correo Electrónico:</label>
+        <input type="email" class="form-control" id="inputEmail" required />
+      </div>
+      <div>
+        <label for="inputPassword" class="form-label">Contraseña:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="inputPassword"
+          required
+        />
+      </div>
+      <div>
+        <label for="inputAvatar" class="form-label">Avatar:</label>
+        <input
+          type="file"
+          class="form-control"
+          id="inputAvatar"
+          accept="image/*"
+        />
+      </div>
+      <button type="submit" class="btn btn-success">Guardar</button>
+    </form>
+    <div class="text-center">
+      <button id="addUserButton" class="btn btn-primary">
+        Agregar Usuario
+      </button>
     </div>
 
     <script src="/js/administracion.js"></script>
