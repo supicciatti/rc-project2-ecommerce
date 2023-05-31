@@ -87,6 +87,11 @@ border-bottom: 1px solid transparent;
 .galeria img{
   max-width: 400px;
   padding: 1rem;
+  transition: transform .5s
+}
+.galeria img:hover{
+  transform: scale(1.1);
+
 }
 
 .galeria .cuotas{
@@ -102,6 +107,15 @@ border-bottom: 1px solid transparent;
 .galeria .condiciones{
   color:#C651CD ;
   margin-left: 1rem;
+}
+
+.galeria a{
+  text-decoration: none;
+
+}
+.galeria a:hover{
+  color: white;
+  font-weight: bold;
 }
 
 

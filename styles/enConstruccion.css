@@ -6,10 +6,24 @@ body {
 }
 
 .mainBox {
-  background-color: grey;
+  background-color: #363636;
   margin-top: 20rem;
+  border-radius: 50px;
 }
 
 h4 {
   color: white;
 }
+
+.btn{
+  background-color: #C651CD;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn:hover{
+  background-color:#8739F9;
+  color: white;
+  
+}}
