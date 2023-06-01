@@ -1,3 +1,11 @@
+body {
+  background-color: #363636;
+}
+.titulo {
+  color: white;
+  margin-top: 6.5rem;
+  background-image: linear-gradient(to right, #c651cd, #8739f9);
+}
 /*NAVBAR*/
 
 .navbar {
@@ -187,7 +195,7 @@ img.avatar-img {
   -webkit-background-clip: text;
 }
 .bg-image {
-  height: 300px;
+  height: 250px;
   overflow: hidden;
 }
 .bg-image img {
@@ -214,6 +222,10 @@ img.avatar-img {
 .card-body .btn:hover {
   background-color: #c651cd;
   color: #100f10;
+}
+.productsInProcess {
+  text-decoration: none;
+  color: white;
 }
 
 /* FOOTER */
