@@ -394,3 +394,17 @@ body {
   font-size: 17px;
  }
 
+.productsInProcess{
+  text-decoration: none;
+  color: white;
+}
+
+.formInputStyles {
+  border-width: 2px;
+  border-color: #8739f9;
+}
+
+.formInputStyles:focus {
+  border-color: #8739f9;
+  box-shadow: 1px 1px 1px 1px #8739f9;
+}

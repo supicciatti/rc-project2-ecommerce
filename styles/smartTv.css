@@ -1,3 +1,7 @@
+body {
+  background-color: #363636;
+}
+
 /*NAVBAR*/
 
 .navbar {
@@ -191,7 +195,7 @@ img.avatar-img {
 
 .titulo {
   color: white;
-  margin-top: 10rem;
+  margin-top: 6.5rem;
   background-image: linear-gradient(to right, #c651cd, #8739f9);
 }
 

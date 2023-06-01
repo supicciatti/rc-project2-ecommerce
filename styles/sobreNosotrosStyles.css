@@ -189,7 +189,6 @@ p {
   margin-bottom: 40px;
   font-size: 20px;
   color: #c651cd;
-  padding: 0 100px;
   margin: 16px;
 }
 .box-container2 {
@@ -241,7 +240,7 @@ body {
 
 .titulo {
   color: white;
-  margin-top: 3rem;
+  margin-top: 6.5rem;
   background-image: linear-gradient(to right, #c651cd, #8739f9);
 }
 
@@ -319,6 +318,68 @@ h1 {
 }
 
 /* MEDIA */
+/* FOOTER */
+footer {
+  margin-top: 10rem;
+}
+.col-md-2 p {
+  color: #c651cd;
+}
+.col-md-2 p:hover {
+  color: white;
+}
+
+.me-5 span {
+  color: white;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.col-md-2 h6 {
+  color: white;
+}
+
+.col-md-3 p {
+  color: #c651cd;
+}
+.col-md-3 p:hover {
+  color: white;
+  right: 15px;
+}
+
+.col-md-3 h6 {
+  color: white;
+}
+
+.col-md-4 p {
+  color: #c651cd;
+}
+
+.col-md-4 h6 {
+  color: white;
+}
+
+.col-md-4 p i {
+  color: #c651cd;
+}
+
+.text-center .text-reset {
+  color: #c651cd;
+}
+
+.me-4 img {
+  transition: transform 0.2s;
+}
+
+.me-4 img:hover {
+  transform: scale(1.5);
+}
+
+.col-md-4 a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
 
 @media only screen and (min-width: 1200px) {
   .img-hover-zoom--colorize img {
@@ -331,4 +392,9 @@ h1 {
   h1 {
     font-size: 2rem;
   }
+}
+
+.socialMediaStlyes {
+  text-decoration: none;
+  color: black;
 }
