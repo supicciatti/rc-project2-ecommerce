@@ -1,61 +1,115 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+:root {
+    --font3: 'Roboto', sans-serif;
 }
+
+
 body{
-    text-align: center;
-    background-color: #363636;
+    background-image: url(../Assets/photos/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
-.title{
-    margin-bottom: 40px;
-    font-size: 60px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: bisque;
+
+.titulo{
+  color: white;
+  margin-top: 3rem;
+  background-image: linear-gradient(to right, #C651CD  , #8739F9);
+ }
+
+
+.h1,
+h1 {
+    font-size: 1.5rem;
+    color: white;
 }
-p{
-    margin-bottom: 40px;
-    font-size: 20px;
-    color: #C651CD;
-    padding: 0 100px;
-    margin: 16px;
+
+.container{
+    margin-top: 10rem;
 }
-.box-container2{
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    flex-wrap: wrap;
+
+
+
+.container-fluid {
+    max-width: 1400px;
 }
-.box-container2 .box{
-    width: 250px;
-    padding-bottom: 50px;
-    text-align: center;
-    box-shadow: 0 5px 5px rgba(0, 0, 0 , 0);
-    background-color: #C651CD;
-    margin: 20px 20px;
+
+.card {
+    background: #242424;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    border: 1;
+    border-radius: 1rem;
 }
-.box-container2 .box img{
-    height: 90px;
-    width: 90px;
-    object-fit: cover;
+
+.img-hover-zoom--colorize img {
     border-radius: 50%;
-    border:6px  solid #8739f9;
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    padding: 1px;
+    transition: transform .5s;
+    filter: grayscale(100%);
 }
-.-container2 .box h3{
-    font-size: 18px;
-    color: #363636;
-    padding-top: 10px;
-    
+
+.img-hover-zoom--colorize:hover img {
+    filter: grayscale(0);
+    transform: scale(1.05);
 }
-.box-container2 .box p{
-    font-size: 18px;
+
+.card h5 {
+    overflow: hidden;
+    height: 80px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.card h5 a {
     color: black;
-    padding: 0;
-}
-.box-container2 .card:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0 , 0.2);
+    text-decoration: none;
 }
 
+.role {
+    color: #7a7a7a;
+}
 
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab {
+    font-size: 1.5rem;
+    color: darkgray;
+    transition: transform .5s;
+}
+
+.fab:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.card h2 {
+    font-size: 1rem;
+}
+
+.text-uppercase{
     
+}
+
+
+/* MEDIA */
+
+@media only screen and (min-width: 1200px) {
+    .img-hover-zoom--colorize img {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .h1,
+    h1 {
+        font-size: 2rem;
+    }
+}
