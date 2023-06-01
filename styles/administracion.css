@@ -1,5 +1,5 @@
 * {
-  background-color: white;
+  background-color: #363636;
 }
 
 /*TITULO H1*/
@@ -15,3 +15,14 @@
 img {
   width: 13rem;
 }
+
+
+/*Nombre de LABEL*/ 
+.form-label{
+  font-size: 15px;
+  font-weight:600;
+  color:white;
+}}
+
+
+
