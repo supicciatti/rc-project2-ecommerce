@@ -1,7 +1,7 @@
 /*NAVBAR*/
 
 .navbar {
-  background-color: #242424;
+  background-color: #363636;
   border-bottom: 1px solid transparent;
 }
 
@@ -186,4 +186,11 @@ img.avatar-img {
 
 td img {
   width: 13rem;
+}
+
+/*Nombre de LABEL*/
+.form-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
 }
