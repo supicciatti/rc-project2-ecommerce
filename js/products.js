@@ -10,7 +10,7 @@ for (let i = 0; i < 3; i++) {
   let product = products[i];
 
   let card = document.createElement("div");
-  card.classList.add("col-lg-4", "col-md-12", "mb-4");
+  card.classList.add("col-lg-4", "col-md-12", "mb-1");
   card.innerHTML = `
     <div class="card-body ">
       <div class="text-center">
@@ -21,7 +21,7 @@ for (let i = 0; i < 3; i++) {
       <h3 class="precio d-flex align-items-center justify-content-center">$${product.precio}</h3>
       <h5 class="online" style="color:white; text-align: center">${product.promocion}</h5>
       <div class="d-grid my-3">
-        <button class="btn btn-outline-red btn-block"><img src="assets/photos/carro.png" style="width:3rem">Comprar</button>
+        <button class="btn btn-outline-red btn-block"><img src="assets/photos/carro.png" style="width:3rem"><a href="https://mxhome.netlify.app/pages/detalleProducto.html" class="compraLink">Comprar</a></button>
       </div>
     </div>`;
 
@@ -49,7 +49,8 @@ for (let i = 3; i < 9; i++) {
               </div>
               <div class="text-center">
                 <button type="button" class="btn btncolor mb-3">
-                  <img src="assets/photos/carro.png" style="width:2rem">Comprar
+                  <img src="assets/photos/carro.png" style="width:2rem">
+                  <a href="https://mxhome.netlify.app/pages/detalleProducto.html" class="compraLink">Comprar</a>
                 </button>
               </div>
             </div>`;

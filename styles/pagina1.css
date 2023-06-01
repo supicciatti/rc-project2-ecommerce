@@ -332,3 +332,12 @@ footer {
   color: white;
   font-size: 17px;
 }
+
+.compraLink {
+  text-decoration: none;
+  color: white;
+}
+
+.cardInProcess {
+  text-decoration: none;
+}

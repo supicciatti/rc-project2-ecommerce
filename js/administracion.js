@@ -118,8 +118,8 @@ function renderproducts() {
       <td class="precioVenta">${product.precio}</td>
       <td class="unidades">${product.unidades}</td>
       <td>
-        <button type="button" class="btn btn-warning editar" data-id="${product.id}">Editar</button>
-        <button type="button" class="btn btn-danger eliminar" data-id="${product.id}">Eliminar</button>
+        <button type="button" class="btn btn-warning editar mt-3" data-id="${product.id}">Editar</button>
+        <button type="button" class="btn btn-danger eliminar mt-3" data-id="${product.id}">Eliminar</button>
       </td>
     `;
 
@@ -226,6 +226,7 @@ formulario = document.getElementById("formulario");
 // Agregar un event listener al botón "Agregar producto"
 botonAgregar.addEventListener("click", function () {
   formulario.style.display = "block"; // Mostrar el formulario
+  botonAgregar.style.display = "none";
 });
 
 // Agregar un event listener al formulario para ocultarlo cuando se envía
@@ -278,10 +279,10 @@ function renderUsers() {
         user.avatar || "default-avatar.png"
       }" alt="Avatar" class="avatar"></td>
       <td>
-        <button type="button" class="btn btn-warning editar" data-email="${
+        <button type="button" class="btn btn-warning editar mt-3" data-email="${
           user.email
         }">Editar</button>
-        <button type="button" class="btn btn-danger eliminar" data-email="${
+        <button type="button" class="btn btn-danger eliminar mt-3" data-email="${
           user.email
         }">Eliminar</button>
       </td>
@@ -306,7 +307,12 @@ function renderUsers() {
   deleteButtons.forEach(function (button) {
     button.addEventListener("click", function (event) {
       let email = event.target.dataset.email;
-      deleteUser(email);
+      if (email != "admin@admin.com") {
+        deleteUser(email);
+      } else {
+        alert(`Imposible! Nadie puede eliminar al admin!`);
+        location.reload();
+      }
     });
   });
 }
@@ -393,6 +399,7 @@ userForm = document.getElementById("userForm");
 // Agregar un event listener al botón "Agregar usuario"
 addUserButton.addEventListener("click", function () {
   userForm.style.display = "block";
+  addUserButton.style.display = "none";
 });
 
 // Agregar un event listener al formulario de usuario para ocultarlo cuando se envía
