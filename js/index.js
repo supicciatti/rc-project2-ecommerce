@@ -10,7 +10,7 @@ if (usersJSON) {
       email: "admin@admin.com",
       password: "Admin1234",
       username: "admin",
-      avatar: "../assets/photos/cuteBear.jpg",
+      avatar: "../assets/photos/admin.jpg",
     },
   ];
   saveUsersToLocalStorage();
